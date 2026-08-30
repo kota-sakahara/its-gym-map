@@ -101,6 +101,8 @@ button, summary { touch-action: manipulation; }
 .telemetry { display: flex; margin: 0; flex: 1; }
 .telemetry div { min-width: 126px; padding: 8px 18px; border-right: 1px solid var(--line); }
 .telemetry-view { min-width: 176px !important; }
+.telemetry-coordinate { min-width: 200px !important; }
+.telemetry-coordinate dd { color: var(--cyan); font-size: 10px; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .telemetry-clock { position: relative; min-width: 220px !important; background: linear-gradient(90deg, rgb(57 246 255 / .04), transparent); }
 .telemetry-clock::before { content: "LIVE"; position: absolute; top: 7px; right: 11px; color: var(--magenta); font-size: 7px; letter-spacing: .12em; text-shadow: 0 0 7px var(--magenta); animation: signal-blink 1s steps(2, end) infinite; }
 .telemetry-clock dd { --idle-text-shadow: 0 0 9px rgb(57 246 255 / .42); color: var(--cyan); font-size: 11px; font-variant-numeric: tabular-nums; white-space: nowrap; text-shadow: var(--idle-text-shadow); }
@@ -282,7 +284,7 @@ input:focus, select:focus, button:focus-visible { border-color: var(--cyan); box
 .detail-fees small { margin: 0; color: #789a9f; font-size: 7px; }
 .detail-fees b { color: var(--amber); font-size: 14px; }
 .detail-address { margin: 11px 0; color: #a5c5c9; font-family: system-ui, sans-serif; font-size: 11px; line-height: 1.55; }
-.detail-links { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.detail-links { display: grid; grid-template-columns: 1fr; gap: 8px; }
 .detail-link { display: grid; min-height: 38px; place-items: center; color: #031016; background: var(--cyan); font-size: 10px; font-weight: 800; letter-spacing: .06em; text-decoration: none; }
 .detail-link:hover, .detail-link:focus-visible { background: #e8feff; box-shadow: 0 0 16px rgb(57 246 255 / .45); outline: none; }
 .detail-link.is-google { color: var(--cyan); border: 1px solid var(--cyan); background: transparent; }
@@ -415,14 +417,20 @@ input:focus, select:focus, button:focus-visible { border-color: var(--cyan); box
 @keyframes reference-pulse-cyan { 50% { box-shadow: 0 0 0 11px rgb(57 246 255 / 0), 0 0 20px 5px rgb(57 246 255 / .9), 0 0 38px rgb(57 246 255 / .42); } }
 @keyframes reference-pulse-magenta { 50% { box-shadow: 0 0 0 11px rgb(255 61 170 / 0), 0 0 20px 5px rgb(255 61 170 / .9), 0 0 38px rgb(255 61 170 / .42); } }
 
-@media (max-width: 1100px) and (min-width: 761px) {
+@media (max-width: 1380px) and (min-width: 761px) {
   .telemetry-data { display: none; }
   .telemetry div { padding-inline: 12px; }
   .telemetry-clock { min-width: 200px !important; }
 }
 
-@media (max-width: 900px) and (min-width: 761px) {
+@media (max-width: 1200px) and (min-width: 761px) {
   .telemetry-view { display: none; }
+}
+
+@media (max-width: 900px) and (min-width: 761px) {
+  .telemetry div:first-child, .telemetry div:nth-child(2) { display: none; }
+  .telemetry-clock, .telemetry-coordinate { min-width: 170px !important; }
+  .theme-switcher { min-width: 120px; }
 }
 
 @media (max-width: 760px) {
@@ -435,6 +443,8 @@ input:focus, select:focus, button:focus-visible { border-color: var(--cyan); box
   .telemetry div:first-child { display: none; }
   .telemetry-data { display: none; }
   .telemetry-view { display: none; }
+  .telemetry-coordinate { min-width: 158px !important; padding-inline: 8px !important; }
+  .telemetry-coordinate dd { max-width: none; font-size: 8px; }
   .telemetry-clock { min-width: 154px !important; padding-inline: 9px !important; }
   .telemetry-clock::before { display: none; }
   .telemetry-clock dd { max-width: none; font-size: 9px; }
@@ -496,6 +506,7 @@ input:focus, select:focus, button:focus-visible { border-color: var(--cyan); box
 @media (max-width: 500px) {
   .wordmark > span:last-child { display: none; }
   .telemetry div:nth-child(2) { display: none; }
+  .telemetry-clock { display: none; }
   .theme-switcher > span { display: none; }
   .theme-switcher { min-width: 102px; align-content: center; }
   .theme-switcher select { min-height: 36px; }

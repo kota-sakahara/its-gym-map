@@ -53,6 +53,7 @@ app.innerHTML = `
     <dl class="telemetry">
       <div><dt>VISIBLE</dt><dd id="visible-count">---</dd></div>
       <div><dt>ORIGIN</dt><dd id="origin-label">LOCATING</dd></div>
+      <div class="telemetry-coordinate"><dt>SELECTED COORD</dt><dd id="selected-coordinate">NO FACILITY</dd></div>
       <div class="telemetry-data"><dt>DATA CHECK</dt><dd id="checked-at">----</dd></div>
       <div class="telemetry-clock"><dt>SYSTEM CLOCK / JST</dt><dd><time id="system-clock">----.--.-- // --:--:--</time></dd></div>
       <div class="telemetry-view"><dt>VIEW VECTOR</dt><dd id="view-vector">Z11.0 / B000° / P00°</dd></div>
@@ -143,7 +144,7 @@ app.innerHTML = `
           </section>
           <section>
             <small data-command-copy="ACCESS CONDITIONS // 利用条件" data-kawaii-copy="利用するときのこと">ACCESS CONDITIONS // 利用条件</small>
-            <p>利用資格、年齢制限、事前登録、必要書類、手数料などは施設や契約経路によって異なります。本サイトは利用資格を判定しません。利用前に必ず「公式情報を開く」から最新情報をご確認ください。</p>
+            <p>利用資格、年齢制限、事前登録、必要書類、手数料などは施設や契約経路によって異なります。本サイトは利用資格を判定しません。利用前に必ず公式サイトで最新情報をご確認ください。</p>
           </section>
           <section>
             <small data-command-copy="POSITION DATA // 位置情報" data-kawaii-copy="現在地について">POSITION DATA // 位置情報</small>
@@ -172,6 +173,7 @@ const required = <T extends Element>(selector: string): T => {
 
 const visibleCount = required<HTMLElement>("#visible-count");
 const originLabel = required<HTMLElement>("#origin-label");
+const selectedCoordinate = required<HTMLElement>("#selected-coordinate");
 const checkedAtElement = required<HTMLElement>("#checked-at");
 const systemClock = required<HTMLTimeElement>("#system-clock");
 const viewVector = required<HTMLElement>("#view-vector");
@@ -213,8 +215,9 @@ themeSelect.addEventListener("change", () => {
   const nextMapStyle = theme === "kawaii" ? MAP_STYLE_LIGHT : MAP_STYLE_DARK;
   if (mapStyle !== nextMapStyle) {
     mapStyle = nextMapStyle;
+    mapStyleReady = false;
     map.setStyle(mapStyle);
-  } else if (gyms.length && map.isStyleLoaded()) updateGymImages();
+  } else if (gyms.length && mapStyleReady) updateGymImages();
   if (gyms.length) render();
   try { localStorage.setItem(THEME_KEY, theme); } catch { /* Storage may be unavailable. */ }
 });
@@ -228,6 +231,7 @@ const state: State = {
   detailOpen: false,
 };
 
+let mapStyleReady = false;
 const map = new maplibregl.Map({
   container: "map",
   style: mapStyle,
@@ -236,6 +240,7 @@ const map = new maplibregl.Map({
   attributionControl: { compact: true },
 });
 map.on("style.load", () => {
+  mapStyleReady = true;
   if (gyms.length && !map.getSource(GYM_SOURCE)) createGymLayer();
 });
 map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "bottom-right");
@@ -335,7 +340,6 @@ function renderGymDetail(gym: RankedGym): void {
     </div>
     <p class="detail-address"><small>${theme === "kawaii" ? "住所" : "ADDRESS"}</small>${escapeHtml(gym.address)}</p>
     <div class="detail-links">
-      <a class="detail-link" href="${escapeHtml(gym.facilitySource.url)}" target="_blank" rel="noreferrer">施設公式情報を開く ↗</a>
       <a class="detail-link is-google" href="${searchUrl}" target="_blank" rel="noreferrer">Google検索 ↗</a>
     </div>`;
   gymDetail.hidden = false;
@@ -373,6 +377,9 @@ function render(): void {
 
   visibleCount.textContent = `${ranked.length} / ${gyms.length}`;
   originLabel.textContent = referenceLabel(state.referenceKind);
+  selectedCoordinate.textContent = selected
+    ? `${selected.location.latitude.toFixed(5)} / ${selected.location.longitude.toFixed(5)}`
+    : "NO FACILITY";
   resetPinButton.disabled = state.referenceKind !== "pin";
   resultSummary.textContent = ranked.length
     ? theme === "kawaii" ? `近い順に ${ranked.length} 件みつかりました` : `${ranked.length} FACILITIES // NEAREST FIRST`
@@ -399,7 +406,6 @@ function gymCard(gym: RankedGym, index: number): string {
       <span class="distance"><b>${formatDistance(gym.distanceMeters)}</b><small>${theme === "kawaii" ? "直線距離" : "STRAIGHT"}</small></span>
     </button>
     <div class="card-links">
-      <a class="source-link" href="${escapeHtml(gym.facilitySource.url)}" target="_blank" rel="noreferrer">公式情報を開く ↗</a>
       <a class="source-link" href="${searchUrl}" target="_blank" rel="noreferrer">Google検索 ↗</a>
     </div>
   </article>`;
@@ -630,11 +636,15 @@ async function start(): Promise<void> {
     for (const brand of [...new Set(gyms.map(({ brand }) => brand))].sort((a, b) => a.localeCompare(b, "ja"))) {
       brandSelect.add(new Option(brand, brand));
     }
-    if (!map.isStyleLoaded()) await new Promise<void>((resolve) => map.once("style.load", () => resolve()));
-    if (!map.getSource(GYM_SOURCE)) createGymLayer();
     bindControls();
-    state.currentLocation = await locationPromise;
-    setReference(state.currentLocation ?? TOKYO_STATION, state.currentLocation ? "current" : "tokyo", true);
+    setReference(TOKYO_STATION, "tokyo", true);
+    if (mapStyleReady && !map.getSource(GYM_SOURCE)) createGymLayer();
+
+    const currentLocation = await locationPromise;
+    if (currentLocation) {
+      state.currentLocation = currentLocation;
+      if (state.referenceKind === "tokyo") setReference(currentLocation, "current", true);
+    }
   } catch (error) {
     signal.textContent = "ERROR";
     signal.classList.add("is-error");

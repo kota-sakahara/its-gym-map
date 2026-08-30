@@ -14,6 +14,9 @@ const ROUTE_LABELS = {
 
 export const routeLabel = (route: Gym["contractRoute"]): string => ROUTE_LABELS[route];
 
+export const googleSearchUrl = ({ name, address }: Pick<Gym, "name" | "address">): string =>
+  `https://www.google.com/search?q=${encodeURIComponent(`${name} ${address}`)}`;
+
 export const normalizeSearch = (value: string): string =>
   value.normalize("NFKC").toLocaleLowerCase("ja-JP").replace(/\s+/g, "");
 

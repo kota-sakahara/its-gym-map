@@ -5,6 +5,7 @@ import { parseCatalog, type Gym } from "./catalog.ts";
 import { gymFeatureCollection, markerOffsets } from "./map-data.ts";
 import {
   filterGyms,
+  googleSearchUrl,
   isDataStale,
   oldestCheckedAt,
   rankGyms,
@@ -209,6 +210,7 @@ function setPanelCollapsed(collapsed: boolean): void {
 function renderGymDetail(gym: RankedGym): void {
   const fees = gym.fees.map(({ label, yen }) =>
     `<span><small>${escapeHtml(label)}</small><b>¥${yen.toLocaleString("ja-JP")}</b></span>`).join("");
+  const searchUrl = escapeHtml(googleSearchUrl(gym));
   detailContent.innerHTML = `
     <div class="detail-meta"><b>${escapeHtml(gym.brand)}</b><span>${escapeHtml(routeLabel(gym.contractRoute))}</span></div>
     <h2 id="gym-detail-name">${escapeHtml(gym.name)}</h2>
@@ -217,7 +219,10 @@ function renderGymDetail(gym: RankedGym): void {
       <div><small>DISTANCE / STRAIGHT</small><strong>${formatDistance(gym.distanceMeters)}</strong></div>
     </div>
     <p class="detail-address"><small>ADDRESS</small>${escapeHtml(gym.address)}</p>
-    <a class="detail-link" href="${escapeHtml(gym.facilitySource.url)}" target="_blank" rel="noreferrer">施設公式情報を開く ↗</a>`;
+    <div class="detail-links">
+      <a class="detail-link" href="${escapeHtml(gym.facilitySource.url)}" target="_blank" rel="noreferrer">施設公式情報を開く ↗</a>
+      <a class="detail-link is-google" href="${searchUrl}" target="_blank" rel="noreferrer">Google検索 ↗</a>
+    </div>`;
   gymDetail.hidden = false;
 }
 
@@ -266,6 +271,7 @@ function render(): void {
 function gymCard(gym: RankedGym, index: number): string {
   const fees = gym.fees.map(({ label, yen }) =>
     `<span><small>${escapeHtml(label)}</small>¥${yen.toLocaleString("ja-JP")}</span>`).join("");
+  const searchUrl = escapeHtml(googleSearchUrl(gym));
   return `<article class="gym-card${state.selectedId === gym.id ? " is-selected" : ""}" data-id="${gym.id}">
     <button class="card-select" type="button" data-id="${gym.id}">
       <span class="card-index">${String(index + 1).padStart(3, "0")}</span>
@@ -277,7 +283,10 @@ function gymCard(gym: RankedGym, index: number): string {
       </span>
       <span class="distance"><b>${formatDistance(gym.distanceMeters)}</b><small>STRAIGHT</small></span>
     </button>
-    <a class="source-link" href="${escapeHtml(gym.facilitySource.url)}" target="_blank" rel="noreferrer">公式情報を開く ↗</a>
+    <div class="card-links">
+      <a class="source-link" href="${escapeHtml(gym.facilitySource.url)}" target="_blank" rel="noreferrer">公式情報を開く ↗</a>
+      <a class="source-link" href="${searchUrl}" target="_blank" rel="noreferrer">Google検索 ↗</a>
+    </div>
   </article>`;
 }
 

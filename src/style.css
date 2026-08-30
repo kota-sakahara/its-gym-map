@@ -34,6 +34,20 @@ button, summary { touch-action: manipulation; }
   will-change: transform, opacity;
   animation: map-scan 8s linear infinite;
 }
+#app::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 8;
+  pointer-events: none;
+  opacity: 0;
+  background:
+    repeating-radial-gradient(circle at 30% 20%, rgb(57 246 255 / .16) 0 1px, transparent 1px 4px),
+    repeating-linear-gradient(90deg, transparent 0 11px, rgb(255 61 170 / .08) 12px 13px);
+  mix-blend-mode: screen;
+  will-change: opacity, transform;
+  animation: signal-noise 14s steps(1, end) infinite;
+}
 #app::after {
   content: "";
   position: fixed;
@@ -59,7 +73,7 @@ button, summary { touch-action: manipulation; }
   box-shadow: 0 0 26px rgb(0 213 255 / .1), inset 0 -1px rgb(57 246 255 / .1);
   backdrop-filter: blur(12px);
   clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
-  animation: hud-enter .5s ease-out both;
+  animation: hud-enter .5s ease-out both, command-flicker 14s 1s steps(1, end) infinite;
 }
 .status-bar::after { content: ""; position: absolute; bottom: 0; left: -20%; width: 20%; height: 1px; background: linear-gradient(90deg, transparent, var(--cyan), transparent); animation: hud-scan 5s linear infinite; }
 
@@ -185,7 +199,8 @@ input:focus, select:focus, button:focus-visible { border-color: var(--cyan); box
 .fees { display: flex; flex-wrap: wrap; gap: 9px; color: var(--amber); font-size: 13px; font-weight: 800; }
 .fees span { display: flex; align-items: baseline; gap: 4px; }
 .fees small { color: #789a9f; font-size: 8px; font-weight: 400; }
-.source-link { position: absolute; bottom: 9px; left: 49px; z-index: 1; color: #57888d; font-size: 8px; text-decoration: none; }
+.card-links { position: absolute; bottom: 9px; left: 49px; z-index: 1; display: flex; gap: 12px; }
+.source-link { color: #57888d; font-size: 8px; text-decoration: none; }
 .source-link:hover, .source-link:focus-visible { color: var(--cyan); text-decoration: underline; outline: none; }
 .distance { display: grid; align-content: center; align-self: stretch; min-width: 57px; padding-left: 8px; border-left: 1px solid rgb(57 246 255 / .15); text-align: right; }
 .distance b { color: #f4feff; font-size: 12px; }
@@ -260,8 +275,11 @@ input:focus, select:focus, button:focus-visible { border-color: var(--cyan); box
 .detail-fees small { margin: 0; color: #789a9f; font-size: 7px; }
 .detail-fees b { color: var(--amber); font-size: 14px; }
 .detail-address { margin: 11px 0; color: #a5c5c9; font-family: system-ui, sans-serif; font-size: 11px; line-height: 1.55; }
+.detail-links { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .detail-link { display: grid; min-height: 38px; place-items: center; color: #031016; background: var(--cyan); font-size: 10px; font-weight: 800; letter-spacing: .06em; text-decoration: none; }
 .detail-link:hover, .detail-link:focus-visible { background: #e8feff; box-shadow: 0 0 16px rgb(57 246 255 / .45); outline: none; }
+.detail-link.is-google { color: var(--cyan); border: 1px solid var(--cyan); background: transparent; }
+.detail-link.is-google:hover, .detail-link.is-google:focus-visible { color: #031016; background: var(--cyan); }
 .reticle { position: absolute; z-index: 9; right: 28px; top: 230px; width: 46px; height: 46px; padding: 0; color: var(--cyan); border: 1px solid rgb(57 246 255 / .35); border-radius: 50%; background: rgb(3 11 17 / .7); opacity: .72; cursor: pointer; }
 .reticle:hover { opacity: 1; border-color: var(--cyan); box-shadow: 0 0 14px rgb(57 246 255 / .3); }
 .reticle::before, .reticle::after { content: ""; position: absolute; background: var(--cyan); }
@@ -292,6 +310,19 @@ input:focus, select:focus, button:focus-visible { border-color: var(--cyan); box
 @keyframes radar-sweep { to { transform: rotate(360deg); } }
 @keyframes telemetry-cursor { 50% { opacity: .2; } }
 @keyframes detail-enter { from { opacity: 0; transform: translateY(12px); } }
+@keyframes signal-noise {
+  0%, 31%, 31.9%, 68%, 68.6%, 100% { opacity: 0; transform: translate(0); }
+  31.2% { opacity: .11; transform: translate(-1px, 1px); }
+  31.4% { opacity: .04; transform: translate(2px); }
+  31.6% { opacity: .08; transform: translate(0, -1px); }
+  68.2% { opacity: .07; transform: translate(1px); }
+  68.4% { opacity: .03; transform: translate(-2px, 1px); }
+}
+@keyframes command-flicker {
+  0%, 44%, 44.4%, 100% { filter: none; }
+  44.1% { filter: brightness(1.35) contrast(1.08); }
+  44.2% { filter: brightness(.72); }
+}
 @keyframes reference-pulse-cyan { 50% { box-shadow: 0 0 0 11px rgb(57 246 255 / 0), 0 0 20px 5px rgb(57 246 255 / .9), 0 0 38px rgb(57 246 255 / .42); } }
 @keyframes reference-pulse-magenta { 50% { box-shadow: 0 0 0 11px rgb(255 61 170 / 0), 0 0 20px 5px rgb(255 61 170 / .9), 0 0 38px rgb(255 61 170 / .42); } }
 
@@ -323,6 +354,7 @@ input:focus, select:focus, button:focus-visible { border-color: var(--cyan); box
   .maplibregl-ctrl-group button:not(.current-location-control):not(.view-3d-control) { width: 44px; height: 44px; }
   .map-hint { display: none; }
   .result-summary { padding: 7px 12px; }
+  .card-links { bottom: 3px; gap: 14px; }
   .source-link { padding: 6px 0; font-size: 10px; }
   .map-legend { top: calc(max(8px, env(safe-area-inset-top)) + 54px); right: max(8px, env(safe-area-inset-right)); width: min(300px, calc(100vw - 16px)); min-width: 0; padding: 0 13px; }
   .map-legend:not([open]) { width: auto; }
@@ -359,4 +391,6 @@ input:focus, select:focus, button:focus-visible { border-color: var(--cyan); box
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+  #app::before { display: none; }
+  .status-bar { filter: none; }
 }

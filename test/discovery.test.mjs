@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import maplibregl from "maplibre-gl";
-import { filterGyms, isDataStale, normalizeSearch, rankGyms } from "../src/discovery.ts";
+import { filterGyms, googleSearchUrl, isDataStale, normalizeSearch, rankGyms } from "../src/discovery.ts";
 
 const source = { url: "https://example.com/", checkedAt: "2026-08-30" };
 const gym = (overrides = {}) => ({
@@ -22,6 +22,12 @@ test("search and filters combine, including any matching fee", () => {
   assert.equal(normalizeSearch(" TEST　Gym "), "testgym");
   assert.deepEqual(filterGyms(gyms, { query: "東京 都", brand: "ブランドA", priceBand: "1000-1499" }).map(({ id }) => id), ["konami-affiliate:a"]);
   assert.equal(filterGyms(gyms, { query: "セントラル系列", brand: "ブランドA", priceBand: "" }).length, 0);
+});
+
+test("Google search uses the facility name and address", () => {
+  const url = new URL(googleSearchUrl(gym()));
+  assert.equal(url.origin, "https://www.google.com");
+  assert.equal(url.searchParams.get("q"), "テスト GYM 東京都 千代田区");
 });
 
 test("gyms are ranked using MapLibre distance", () => {

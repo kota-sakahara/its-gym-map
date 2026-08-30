@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "entries": {
+    "長野県千曲市上山田高河原3813": {
+      "location": { "latitude": 36.533886, "longitude": 138.119971 },
+      "evidenceUrl": "https://www.konami.com/sportsclub/BtoB/alliance/",
+      "checkedAt": "2026-08-30",
+      "reason": "公式提携一覧の施設名・電話番号・住所を施設地図と照合し、字名を解釈できないジオコーダー候補ではなく施設位置を確定"
+    },
+    "静岡県浜松市中区鍛冶町100-1": {
+      "queryAddress": "静岡県浜松市中央区鍛冶町100-1",
+      "evidenceUrl": "https://www.goldsgym.jp/shop/hamamatsu-sizuoka/",
+      "checkedAt": "2026-08-30",
+      "reason": "2024年の行政区再編後の公式住所へ検索用住所を補正"
+    },
+    "静岡県浜松市中区木戸町1-17 2階": {
+      "queryAddress": "静岡県浜松市中央区木戸町1-17",
+      "evidenceUrl": "https://www.life-well.jp/hamamatsu/lp/",
+      "checkedAt": "2026-08-30",
+      "reason": "2024年の行政区再編後の公式住所へ補正し、建物階を検索語から除外"
+    },
+    "三重県伊賀市佐那具町大多田23-1": {
+      "location": { "latitude": 34.8056825, "longitude": 136.17800215 },
+      "evidenceUrl": "https://www.westsports.jp/tenpo/sanagu/index.html",
+      "checkedAt": "2026-08-30",
+      "reason": "公式施設ページの住所と埋め込み地図を照合し、字名を解釈できないジオコーダー候補ではなく施設位置を確定"
+    },
+    "京都府京都市中京区河原町通三条下ル大黒町58 ミーナ京都8階": {
+      "queryAddress": "京都府京都市中京区大黒町58",
+      "evidenceUrl": "https://www.hotyoga-caldo.com/grankyoto/",
+      "checkedAt": "2026-08-30",
+      "reason": "京都の通り名住所と建物階を、公式施設が入居する地番形式の検索用住所へ補正"
+    },
+    "徳島県阿南市西路見町提外40-6": {
+      "location": { "latitude": 33.927759, "longitude": 134.674141 },
+      "evidenceUrl": "https://www.konami.com/sportsclub/BtoB/alliance/",
+      "checkedAt": "2026-08-30",
+      "reason": "公式提携一覧の施設名・電話番号を施設住所「堤外40-6」と地図で照合し、提供元の「提外」誤記を表示上は維持して位置を確定"
+    },
+    "佐賀県伊万里市新天町中島473-3": {
+      "location": { "latitude": 33.269481, "longitude": 129.875023 },
+      "evidenceUrl": "https://imari-swimming.com/genex_imari/",
+      "checkedAt": "2026-08-30",
+      "reason": "公式施設ページの住所「新天町字中島473-3」と埋め込み地図を照合して位置を確定"
+    },
+    "鹿児島県薩摩川内市平佐町字天神迫4290": {
+      "location": { "latitude": 31.81539882, "longitude": 130.3207538 },
+      "evidenceUrl": "https://www.seika-spc.co.jp/stores/sendai",
+      "checkedAt": "2026-08-30",
+      "reason": "公式施設ページの住所・電話番号を施設地図と照合し、町域中心を返すジオコーダー候補ではなく施設位置を確定"
+    },
+    "鹿児島県薩摩川内市平佐町4290": {
+      "location": { "latitude": 31.81539882, "longitude": 130.3207538 },
+      "evidenceUrl": "https://www.seika-spc.co.jp/stores/sendai",
+      "checkedAt": "2026-08-30",
+      "reason": "同一施設の別契約経路を公式施設ページと照合し、町域中心を返した自動座標を施設位置へ補正"
+    },
+    "北海道恵庭市恵み野里見1-2-1": {
+      "location": { "latitude": 42.9061251, "longitude": 141.5735321 },
+      "evidenceUrl": "https://www.central.co.jp/club/cf-megumino/",
+      "checkedAt": "2026-08-30",
+      "reason": "公式施設住所で町域の誤記「里見」を「里美」と確認し、町域中心を返すジオコーダー候補ではなく施設位置を確定"
+    },
+    "東京都杉並区阿佐ヶ谷北2-12-2": {
+      "queryAddress": "東京都杉並区阿佐谷北2-12-2",
+      "evidenceUrl": "https://www.central.co.jp/club/toa-asagaya/",
+      "checkedAt": "2026-08-30",
+      "reason": "公式施設住所と国土地理院表記に従い町域の「ヶ」を除いた検索用住所へ補正"
+    },
+    "神奈川県横浜市港南区中央通12-31-gooday place3F": {
+      "location": { "latitude": 35.40124598026051, "longitude": 139.58997831498797 },
+      "evidenceUrl": "https://www.s-re.jp/konanchuo/experience/",
+      "checkedAt": "2026-08-30",
+      "reason": "公式施設ページで住所の欠落した町域「港南」を確認し、埋め込み地図と照合して位置を確定"
+    },
+    "石川県野々市町本町6-141": {
+      "queryAddress": "石川県野々市市本町6-141",
+      "evidenceUrl": "https://www.central.co.jp/club/nonoichi/",
+      "checkedAt": "2026-08-30",
+      "reason": "2011年の市制施行後の公式施設住所へ検索用住所を補正"
+    },
+    "長野県上田市秋和字金具田116-2": {
+      "location": { "latitude": 36.411294697193746, "longitude": 138.22289881543938 },
+      "evidenceUrl": "https://www.sports-city.jp/chikuma/",
+      "checkedAt": "2026-08-30",
+      "reason": "公式施設ページの住所と埋め込み地図を照合し、字名を解釈できないジオコーダー候補ではなく施設位置を確定"
+    },
+    "静岡県浜松市中区砂山町1107番地 サーラシティ浜松2F": {
+      "queryAddress": "静岡県浜松市中央区砂山町1107",
+      "evidenceUrl": "https://www.salasports.co.jp/info/",
+      "checkedAt": "2026-08-30",
+      "reason": "2024年の行政区再編後の公式住所へ補正し、建物名と階を検索語から除外"
+    },
+    "愛知県名古屋市名東区明ヶ丘124-1amiamiビルB1": {
+      "location": { "latitude": 35.182415, "longitude": 137.020062 },
+      "evidenceUrl": "https://www.central.co.jp/club/fujigaoka/",
+      "checkedAt": "2026-08-30",
+      "reason": "公式施設ページの住所と埋め込み地図を照合し、町域表記差の影響を受けない施設位置を確定"
+    },
+    "京都府舞鶴市字上安久下アラ田8": {
+      "location": { "latitude": 35.451085, "longitude": 135.332386 },
+      "evidenceUrl": "https://www.im-sports.co.jp/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/",
+      "checkedAt": "2026-08-30",
+      "reason": "公式施設ページの住所・電話番号を舞鶴市公開のAED設置位置と照合し、字名を解釈できないジオコーダー候補ではなく施設位置を確定"
+    },
+    "大阪府泉佐野市りんくう住来北1 りんくうゲートタワービル7F": {
+      "queryAddress": "大阪府泉佐野市りんくう往来北1",
+      "evidenceUrl": "https://www.central.co.jp/club/gatetower/",
+      "checkedAt": "2026-08-30",
+      "reason": "公式施設住所に従い町域の誤記「住来」を「往来」へ補正し、建物名と階を検索語から除外"
+    },
+    "山口県山口市大内長野山鼻460": {
+      "location": { "latitude": 34.153434212801244, "longitude": 131.5085292390869 },
+      "evidenceUrl": "https://www.fitsss.co.jp/oouchi/",
+      "checkedAt": "2026-08-30",
+      "reason": "公式施設ページの現住所「大内長野460」と埋め込み地図を照合し、旧小字を解釈できないジオコーダー候補ではなく施設位置を確定"
+    },
+    "高知県高知市朝倉字榊甲183番地1": {
+      "location": { "latitude": 33.54193668074791, "longitude": 133.4959326152018 },
+      "evidenceUrl": "https://www.fitta.jp/kochi/",
+      "checkedAt": "2026-08-30",
+      "reason": "公式施設ページの住所と埋め込み地図を照合し、複数の朝倉候補から施設位置を確定"
+    }
+  }
+}

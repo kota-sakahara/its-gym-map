@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.DS_Store
+.agents/
+.claude/
+.codex/
+data/geocode-cache.pending.json
+data/geocode-failures.json

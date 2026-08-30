@@ -1,0 +1,3465 @@
+{
+  "schemaVersion": 1,
+  "entries": {
+    "東京都板橋区坂下1-33-12": {
+      "latitude": 35.781426,
+      "longitude": 139.685117,
+      "source": "manual"
+    },
+    "東京都千代田区丸の内1-9-1": {
+      "latitude": 35.6812,
+      "longitude": 139.7671,
+      "source": "manual"
+    },
+    "埼玉県さいたま市緑区大字中尾緑島2503-3": {
+      "latitude": 35.86663197252791,
+      "longitude": 139.68405577727495,
+      "source": "manual"
+    },
+    "北海道札幌市中央区北4条西6丁目3番4号タイムズステーション札幌駅前ビル7~9階": {
+      "latitude": 43.065894,
+      "longitude": 141.346233,
+      "source": "official"
+    },
+    "北海道札幌市中央区南1条西27丁目1-1マルヤマクラス4~5階": {
+      "latitude": 43.0549094,
+      "longitude": 141.3176662,
+      "source": "official"
+    },
+    "北海道札幌市厚別区厚別中央2条4丁目6": {
+      "latitude": 43.038199,
+      "longitude": 141.468888,
+      "source": "official"
+    },
+    "北海道札幌市南区川沿2条1丁目1-1": {
+      "latitude": 42.999523,
+      "longitude": 141.338307,
+      "source": "official"
+    },
+    "岩手県北上市新穀町1丁目4-1 ツインモールプラザ西館7・8階電話番号 0197-61-4700": {
+      "latitude": 39.288596,
+      "longitude": 141.114624,
+      "source": "official"
+    },
+    "宮城県仙台市太白区長町7-20-5ララガーデン長町4・5階": {
+      "latitude": 38.225609,
+      "longitude": 140.876626,
+      "source": "official"
+    },
+    "埼玉県入間市豊岡1-1-12": {
+      "latitude": 35.8404,
+      "longitude": 139.387608,
+      "source": "official"
+    },
+    "埼玉県川口市宮町18-9ララガーデン川口 1・2階": {
+      "latitude": 35.803876,
+      "longitude": 139.69873,
+      "source": "official"
+    },
+    "埼玉県川越市鯨井新田10-1": {
+      "latitude": 35.9351101,
+      "longitude": 139.4220667,
+      "source": "official"
+    },
+    "埼玉県上尾市緑丘3-4-61P・A・P・A上尾ショッピングアヴェニュー内": {
+      "latitude": 35.988651,
+      "longitude": 139.578722,
+      "source": "official"
+    },
+    "埼玉県所沢市星の宮1-13": {
+      "latitude": 35.788657,
+      "longitude": 139.463553,
+      "source": "official"
+    },
+    "埼玉県さいたま市南区別所7‐2‐1ザ・ファーストタワー2階": {
+      "latitude": 35.847309,
+      "longitude": 139.650081,
+      "source": "official"
+    },
+    "埼玉県和光市白子1-6-9": {
+      "latitude": 35.767827,
+      "longitude": 139.620159,
+      "source": "official"
+    },
+    "千葉県市川市鬼高1-1-1ニッケコルトンプラザ": {
+      "latitude": 35.714158,
+      "longitude": 139.934113,
+      "source": "official"
+    },
+    "千葉県千葉市稲毛区小仲台1-4-20イオン稲毛店4F": {
+      "latitude": 35.635516,
+      "longitude": 140.096248,
+      "source": "official"
+    },
+    "千葉県習志野市奏の杜1-12-3MFビル3階": {
+      "latitude": 35.690522619877434,
+      "longitude": 140.0145979996554,
+      "source": "official"
+    },
+    "千葉県松戸市小金一番地イオン北小金5F(運動塾)/6F(フィットネス)": {
+      "latitude": 35.832709,
+      "longitude": 139.931729,
+      "source": "official"
+    },
+    "千葉県市原市五井5232-2": {
+      "latitude": 35.51991,
+      "longitude": 140.088344,
+      "source": "official"
+    },
+    "千葉県松戸市常盤平5-1-6": {
+      "latitude": 35.799198,
+      "longitude": 139.964844,
+      "source": "official"
+    },
+    "千葉県船橋市本中山2丁目10番1号ミレニティ中山 5・6階": {
+      "latitude": 35.714351,
+      "longitude": 139.944356,
+      "source": "official"
+    },
+    "千葉県千葉市若葉区都賀3-11-1": {
+      "latitude": 35.635209,
+      "longitude": 140.150719,
+      "source": "official"
+    },
+    "千葉県習志野市津田沼1-8-1": {
+      "latitude": 35.688199,
+      "longitude": 140.02591,
+      "source": "official"
+    },
+    "千葉県船橋市印内町579-1ロクロービル": {
+      "latitude": 35.706322,
+      "longitude": 139.959103,
+      "source": "official"
+    },
+    "千葉県船橋市湊町2-8-45コナミスポーツクラブ 船橋(船橋市役所前・船橋中央消防署横)": {
+      "latitude": 35.694271,
+      "longitude": 139.981188,
+      "source": "official"
+    },
+    "千葉県市川市妙典4-4-27妙典センタービル4・5F": {
+      "latitude": 35.691887,
+      "longitude": 139.927173,
+      "source": "official"
+    },
+    "東京都新宿区揚場町2-1軽子坂MNビル地下1階": {
+      "latitude": 35.702353,
+      "longitude": 139.742606,
+      "source": "official"
+    },
+    "東京都豊島区東池袋3-1-4サンシャインシティ文化会館5階": {
+      "latitude": 35.729145,
+      "longitude": 139.719318,
+      "source": "official"
+    },
+    "東京都稲城市東長沼3107-4京王リトナード稲城5・6階": {
+      "latitude": 35.63662,
+      "longitude": 139.500981,
+      "source": "official"
+    },
+    "東京都渋谷区広尾1-1-40恵比寿プライムスクエア内": {
+      "latitude": 35.650189,
+      "longitude": 139.712659,
+      "source": "official"
+    },
+    "東京都大田区大森西3-31-8マルエツ大森町店3階": {
+      "latitude": 35.57466,
+      "longitude": 139.733268,
+      "source": "official"
+    },
+    "東京都杉並区荻窪5-30-17": {
+      "latitude": 35.703996,
+      "longitude": 139.621764,
+      "source": "official"
+    },
+    "東京都大田区蒲田5-47-7マルエツ蒲田5F": {
+      "latitude": 35.55965,
+      "longitude": 139.716098,
+      "source": "official"
+    },
+    "東京都品川区東五反田1-22-1日本生命五反田イーストビルB1F": {
+      "latitude": 35.625974,
+      "longitude": 139.727106,
+      "source": "official"
+    },
+    "東京都渋谷区神泉町18-11": {
+      "latitude": 35.657692,
+      "longitude": 139.691345,
+      "source": "official"
+    },
+    "東京都目黒区自由が丘2-12-17": {
+      "latitude": 35.607075,
+      "longitude": 139.667402,
+      "source": "official"
+    },
+    "東京都板橋区成増3-30-19": {
+      "latitude": 35.781032,
+      "longitude": 139.629473,
+      "source": "official"
+    },
+    "東京都足立区梅島3-32-7イオン西新井4階": {
+      "latitude": 35.777369,
+      "longitude": 139.791287,
+      "source": "official"
+    },
+    "東京都江東区大島7-38-30イオン東大島4階": {
+      "latitude": 35.690558,
+      "longitude": 139.841818,
+      "source": "official"
+    },
+    "東京都小平市上水本町4-16-12": {
+      "latitude": 35.715932,
+      "longitude": 139.478044,
+      "source": "official"
+    },
+    "東京都目黒区碑文谷2-1-24": {
+      "latitude": 35.624898,
+      "longitude": 139.688826,
+      "source": "official"
+    },
+    "東京都世田谷区玉川2-27-10": {
+      "latitude": 35.615762,
+      "longitude": 139.62791,
+      "source": "official"
+    },
+    "東京都府中市宮西町1-27-1": {
+      "latitude": 35.671177,
+      "longitude": 139.476629,
+      "source": "official"
+    },
+    "東京都江戸川区船堀3-5-7 TOKIビル4F電話番号 03-5605-5311": {
+      "latitude": 35.683028,
+      "longitude": 139.863998,
+      "source": "official"
+    },
+    "東京都品川区東品川4-10-1": {
+      "latitude": 35.608038,
+      "longitude": 139.745738,
+      "source": "official"
+    },
+    "東京都武蔵野市境南町2-1-6ライザ武蔵境内": {
+      "latitude": 35.701983,
+      "longitude": 139.544271,
+      "source": "official"
+    },
+    "東京都武蔵野市中町1-11-4武蔵野ニッセイプラザ7F": {
+      "latitude": 35.70512,
+      "longitude": 139.561557,
+      "source": "official"
+    },
+    "東京都目黒区下目黒1-8-1アルコタワー3階": {
+      "latitude": 35.631243,
+      "longitude": 139.713683,
+      "source": "official"
+    },
+    "東京都目黒区青葉台2-19-10": {
+      "latitude": 35.648915,
+      "longitude": 139.692906,
+      "source": "official"
+    },
+    "神奈川県厚木市戸室5-31-1アツギトレリス4階": {
+      "latitude": 35.448615,
+      "longitude": 139.343349,
+      "source": "official"
+    },
+    "神奈川県横浜市磯子区森1-12-1": {
+      "latitude": 35.398558,
+      "longitude": 139.615871,
+      "source": "official"
+    },
+    "神奈川県横浜市港南区上大岡西1-18-5mioka2階": {
+      "latitude": 35.40744,
+      "longitude": 139.594922,
+      "source": "official"
+    },
+    "神奈川県川崎市幸区堀川町72-1ラゾーナ川崎プラザ5階・6階": {
+      "latitude": 35.533099,
+      "longitude": 139.695872,
+      "source": "official"
+    },
+    "神奈川県横浜市旭区東希望が丘107": {
+      "latitude": 35.462453,
+      "longitude": 139.514097,
+      "source": "official"
+    },
+    "神奈川県横浜市青葉区美しが丘1-13-1": {
+      "latitude": 35.579295,
+      "longitude": 139.555371,
+      "source": "official"
+    },
+    "神奈川県大和市中央林間6丁目6-24番地": {
+      "latitude": 35.509581,
+      "longitude": 139.446648,
+      "source": "official"
+    },
+    "神奈川県相模原市緑区西橋本5-1-1ラ・フロール橋本4F": {
+      "latitude": 35.59727,
+      "longitude": 139.337623,
+      "source": "official"
+    },
+    "神奈川県横浜市瀬谷区三ツ境7-1": {
+      "latitude": 35.466042,
+      "longitude": 139.50404,
+      "source": "official"
+    },
+    "神奈川県川崎市中原区新丸子東3-1100-14": {
+      "latitude": 35.575348,
+      "longitude": 139.661471,
+      "source": "official"
+    },
+    "神奈川県横浜市磯子区洋光台3-1-4洋光台商事ビル": {
+      "latitude": 35.37901,
+      "longitude": 139.594703,
+      "source": "official"
+    },
+    "神奈川県横浜市神奈川区沢渡5番地": {
+      "latitude": 35.471116,
+      "longitude": 139.61683,
+      "source": "official"
+    },
+    "岐阜県大垣市三塚町463-1": {
+      "latitude": 35.365589,
+      "longitude": 136.627693,
+      "source": "official"
+    },
+    "岐阜県岐阜市橋本町1-10-1アクティブG2F": {
+      "latitude": 35.409702,
+      "longitude": 136.756876,
+      "source": "official"
+    },
+    "愛知県名古屋市昭和区滝川町18-3": {
+      "latitude": 35.144562,
+      "longitude": 136.958095,
+      "source": "official"
+    },
+    "愛知県名古屋市天白区植田1-1308": {
+      "latitude": 35.129394,
+      "longitude": 136.98625,
+      "source": "official"
+    },
+    "愛知県岡崎市井田南町3-1": {
+      "latitude": 34.975504,
+      "longitude": 137.162453,
+      "source": "official"
+    },
+    "愛知県刈谷市神明町7-404": {
+      "latitude": 34.998214,
+      "longitude": 137.004705,
+      "source": "official"
+    },
+    "愛知県瀬戸市東長根町7": {
+      "latitude": 35.217459,
+      "longitude": 137.077786,
+      "source": "official"
+    },
+    "愛知県豊明市前後町五軒屋1555-1": {
+      "latitude": 35.055411,
+      "longitude": 136.994942,
+      "source": "official"
+    },
+    "愛知県豊田市八幡町3-14": {
+      "latitude": 35.079455,
+      "longitude": 137.162872,
+      "source": "official"
+    },
+    "愛知県豊田市大林町16-10-1": {
+      "latitude": 35.0457952,
+      "longitude": 137.1448294,
+      "source": "official"
+    },
+    "愛知県豊橋市向山町字川北15-1": {
+      "latitude": 34.750504,
+      "longitude": 137.400187,
+      "source": "official"
+    },
+    "愛知県名古屋市緑区鳴海町字山下78-1": {
+      "latitude": 35.093274,
+      "longitude": 136.949423,
+      "source": "official"
+    },
+    "愛知県名古屋市千種区星ヶ丘1丁目1番7号テックランド星ヶ丘5F": {
+      "latitude": 35.16231,
+      "longitude": 136.987289,
+      "source": "official"
+    },
+    "三重県鈴鹿市神戸3丁目24-28": {
+      "latitude": 34.875661,
+      "longitude": 136.58623,
+      "source": "official"
+    },
+    "京都府京都市北区小山北上総町49-1イオンモール北大路3F(イオンモール館内・北側エレベーターで3階に)": {
+      "latitude": 35.04508,
+      "longitude": 135.758348,
+      "source": "official"
+    },
+    "京都府京都市上京区中筋通り丸太町下ル駒之町561-1": {
+      "latitude": 35.017419,
+      "longitude": 135.770714,
+      "source": "official"
+    },
+    "京都府京都市中京区西ノ京東中合町70": {
+      "latitude": 35.012053,
+      "longitude": 135.732248,
+      "source": "official"
+    },
+    "京都府京都市伏見区両替町2丁目348-1": {
+      "latitude": 34.930297,
+      "longitude": 135.763796,
+      "source": "official"
+    },
+    "京都府八幡市八幡源氏垣外51": {
+      "latitude": 34.879745,
+      "longitude": 135.708502,
+      "source": "official"
+    },
+    "大阪府和泉市いぶき野5丁目6-2": {
+      "latitude": 34.461104,
+      "longitude": 135.459052,
+      "source": "official"
+    },
+    "大阪府茨木市下穂積1丁目7番5号イオンモール茨木別棟": {
+      "latitude": 34.810596,
+      "longitude": 135.557009,
+      "source": "official"
+    },
+    "大阪府大阪市北区梅田3-1-3大阪ステーションシティノースゲートビルディング11階~13階(入口:11階)": {
+      "latitude": 34.702168,
+      "longitude": 135.495771,
+      "source": "official"
+    },
+    "大阪府大阪市東淀川区上新庄2-24-24上新庄南阪急ビル2F": {
+      "latitude": 34.748018,
+      "longitude": 135.53302,
+      "source": "official"
+    },
+    "大阪府吹田市古江台4丁目2-50イオン北千里店7階": {
+      "latitude": 34.820363,
+      "longitude": 135.509134,
+      "source": "official"
+    },
+    "大阪府大阪市中央区高麗橋1-7-3The Kitahama Plaza 4~6階(入口:4階)": {
+      "latitude": 34.689348,
+      "longitude": 135.507091,
+      "source": "official"
+    },
+    "大阪府堺市南区鴨谷台2-1-5サンピア2番館5.6.7.8階": {
+      "latitude": 34.473401,
+      "longitude": 135.475346,
+      "source": "official"
+    },
+    "大阪府枚方市香里ケ丘3丁目3-1": {
+      "latitude": 34.791026,
+      "longitude": 135.658297,
+      "source": "official"
+    },
+    "大阪府東大阪市西石切町7丁目1-25": {
+      "latitude": 34.682237,
+      "longitude": 135.635584,
+      "source": "official"
+    },
+    "大阪府大阪市淀川区西宮原2-1-3ソーラ新大阪21ビル4・5F": {
+      "latitude": 34.734596,
+      "longitude": 135.493333,
+      "source": "official"
+    },
+    "大阪府大阪市中央区南船場3-4-26THE PEAK SHINSAIBASHI 3~9階": {
+      "latitude": 34.675615,
+      "longitude": 135.502849,
+      "source": "official"
+    },
+    "大阪府寝屋川市本町17-8": {
+      "latitude": 34.765655,
+      "longitude": 135.626228,
+      "source": "official"
+    },
+    "大阪府岸和田市上松町2-11-15": {
+      "latitude": 34.451573,
+      "longitude": 135.390269,
+      "source": "official"
+    },
+    "大阪府吹田市五月が丘西7-2": {
+      "latitude": 34.786075,
+      "longitude": 135.525076,
+      "source": "official"
+    },
+    "大阪府守口市緑町2-13": {
+      "latitude": 34.733665,
+      "longitude": 135.556212,
+      "source": "official"
+    },
+    "兵庫県明石市大明石町2-3-31": {
+      "latitude": 34.648494,
+      "longitude": 134.987865,
+      "source": "official"
+    },
+    "兵庫県明石市大久保町ゆりのき通2丁目3-1": {
+      "latitude": 34.6798668,
+      "longitude": 134.936672,
+      "source": "official"
+    },
+    "兵庫県加古川市加古川町寺家町269-1": {
+      "latitude": 34.770808,
+      "longitude": 134.834851,
+      "source": "official"
+    },
+    "兵庫県川西市中央町3-12ビッグボックス川西内": {
+      "latitude": 34.828923,
+      "longitude": 135.415676,
+      "source": "official"
+    },
+    "兵庫県神戸市中央区東川崎町1-7-7神戸ハーバーランドumie NORTHMALL5~7F(入口は6F)※東エレベーター6F": {
+      "latitude": 34.679681,
+      "longitude": 135.182335,
+      "source": "official"
+    },
+    "兵庫県三田市三輪1-3": {
+      "latitude": 34.889416,
+      "longitude": 135.228749,
+      "source": "official"
+    },
+    "兵庫県神戸市中央区御幸通5丁目1-21富永ビル": {
+      "latitude": 34.693193,
+      "longitude": 135.198646,
+      "source": "official"
+    },
+    "兵庫県神戸市垂水区青山台7-7-1イオンジェームス山店4F (立体駐車場7F)": {
+      "latitude": 34.64586,
+      "longitude": 135.077294,
+      "source": "official"
+    },
+    "兵庫県加古川市野口町野口字竹ノ下210-1": {
+      "latitude": 34.753953,
+      "longitude": 134.85644,
+      "source": "official"
+    },
+    "兵庫県西宮市高松町3-7": {
+      "latitude": 34.744639,
+      "longitude": 135.35518,
+      "source": "official"
+    },
+    "兵庫県神戸市東灘区北青木2-10-5": {
+      "latitude": 34.720375,
+      "longitude": 135.283283,
+      "source": "official"
+    },
+    "奈良県生駒市谷田町1613": {
+      "latitude": 34.69517,
+      "longitude": 135.70183,
+      "source": "official"
+    },
+    "奈良県橿原市内膳町5丁目18-1": {
+      "latitude": 34.515092,
+      "longitude": 135.793139,
+      "source": "official"
+    },
+    "鳥取県米子市末広町311番地米子駅前ショッピングセンター4F(イオン米子駅前店4F)": {
+      "latitude": 35.422829,
+      "longitude": 133.332886,
+      "source": "official"
+    },
+    "岡山県岡山市北区幸町10-1": {
+      "latitude": 34.660996,
+      "longitude": 133.920492,
+      "source": "official"
+    },
+    "高知県高知市九反田4-10トップワン四国2・3F": {
+      "latitude": 33.55704,
+      "longitude": 133.547691,
+      "source": "official"
+    },
+    "福岡県大野城市錦町4-1-2": {
+      "latitude": 33.537286,
+      "longitude": 130.476463,
+      "source": "official"
+    },
+    "福岡県福岡市城南区別府3-1-26※地下鉄七隈線で別府駅3番出口を出て左に徒歩1分!!城南区役所目の前": {
+      "latitude": 33.574899,
+      "longitude": 130.370191,
+      "source": "official"
+    },
+    "長崎県長崎市五島町5-38": {
+      "latitude": 32.748105,
+      "longitude": 129.872984,
+      "source": "official"
+    },
+    "熊本県天草市城下町6番18号 リンドマールTAIYO 駐車場内": {
+      "latitude": 32.459012,
+      "longitude": 130.187351,
+      "source": "official"
+    },
+    "沖縄県那覇市天久902": {
+      "latitude": 26.2333268,
+      "longitude": 127.6868045,
+      "source": "official"
+    },
+    "北海道函館市若松町12-8 ハコビバ2F": {
+      "latitude": 41.774517,
+      "longitude": 140.727844,
+      "source": "gsi"
+    },
+    "北海道札幌市手稲区前田5条10丁目-5-12": {
+      "latitude": 43.125477,
+      "longitude": 141.25351,
+      "source": "gsi"
+    },
+    "北海道札幌市東区本町1条9丁目-3-38": {
+      "latitude": 43.073803,
+      "longitude": 141.396729,
+      "source": "gsi"
+    },
+    "北海道札幌市南区川沿5条2-3 コープさっぽろソシア3階": {
+      "latitude": 42.991997,
+      "longitude": 141.333664,
+      "source": "gsi"
+    },
+    "北海道札幌市北区麻生町5-9-15": {
+      "latitude": 43.112041,
+      "longitude": 141.337616,
+      "source": "gsi"
+    },
+    "北海道札幌市豊平区平岸3条8-2-1": {
+      "latitude": 43.034359,
+      "longitude": 141.370621,
+      "source": "gsi"
+    },
+    "北海道札幌市西区琴似1条4-4-13": {
+      "latitude": 43.076469,
+      "longitude": 141.304138,
+      "source": "gsi"
+    },
+    "北海道札幌市中央区南18条西17-1-1 伏見センタービル2階": {
+      "latitude": 43.035454,
+      "longitude": 141.332932,
+      "source": "gsi"
+    },
+    "北海道小樽市花園4-17-3": {
+      "latitude": 43.18856,
+      "longitude": 140.996735,
+      "source": "gsi"
+    },
+    "北海道北広島市中の沢316-1": {
+      "latitude": 42.971397,
+      "longitude": 141.532349,
+      "source": "gsi"
+    },
+    "北海道旭川市永山3条15 コープさっぽろシーナ2階": {
+      "latitude": 43.80521,
+      "longitude": 142.427582,
+      "source": "gsi"
+    },
+    "北海道釧路市城山1-4-1": {
+      "latitude": 42.982311,
+      "longitude": 144.391724,
+      "source": "gsi"
+    },
+    "青森県青森市浜館4-8-5": {
+      "latitude": 40.809185,
+      "longitude": 140.790405,
+      "source": "gsi"
+    },
+    "青森県八戸市江陽2-10-9": {
+      "latitude": 40.524242,
+      "longitude": 141.499496,
+      "source": "gsi"
+    },
+    "青森県三沢市三沢字下久保57-3": {
+      "latitude": 40.683163,
+      "longitude": 141.385941,
+      "source": "gsi"
+    },
+    "青森県十和田市元町西2-13-16": {
+      "latitude": 40.623993,
+      "longitude": 141.200851,
+      "source": "gsi"
+    },
+    "青森県弘前市青山5-27-6": {
+      "latitude": 40.627235,
+      "longitude": 140.479721,
+      "source": "gsi"
+    },
+    "青森県五所川原市広田字柳沼116-3": {
+      "latitude": 40.785187,
+      "longitude": 140.466187,
+      "source": "gsi"
+    },
+    "青森県つがる市柏稲盛幾世41 イオンモールつがる柏2階": {
+      "latitude": 40.802757,
+      "longitude": 140.416412,
+      "source": "gsi"
+    },
+    "岩手県盛岡市三本柳7-66-1": {
+      "latitude": 39.658188,
+      "longitude": 141.164413,
+      "source": "gsi"
+    },
+    "岩手県一関市大手町3-48": {
+      "latitude": 38.929089,
+      "longitude": 141.13501,
+      "source": "gsi"
+    },
+    "宮城県仙台市泉区実沢中山南25-5 仙台ヒルズホテル3F": {
+      "latitude": 38.301132,
+      "longitude": 140.824844,
+      "source": "gsi"
+    },
+    "宮城県仙台市青葉区中央3-6-1 仙台TRビル7F LABI仙台ヤマダ電機のビル7階 西館": {
+      "latitude": 38.260227,
+      "longitude": 140.879471,
+      "source": "gsi"
+    },
+    "宮城県仙台市宮城野区榴岡5-11-1 仙台サンプラザホテル地下1階": {
+      "latitude": 38.257999,
+      "longitude": 140.894226,
+      "source": "gsi"
+    },
+    "宮城県仙台市泉区将監4-29-1": {
+      "latitude": 38.337097,
+      "longitude": 140.882233,
+      "source": "gsi"
+    },
+    "宮城県仙台市宮城野区小田原3‐1‐30": {
+      "latitude": 38.266853,
+      "longitude": 140.892868,
+      "source": "gsi"
+    },
+    "宮城県石巻市新館1-2-3": {
+      "latitude": 38.428722,
+      "longitude": 141.267715,
+      "source": "gsi"
+    },
+    "秋田県横手市安田字堰端52-1": {
+      "latitude": 39.308456,
+      "longitude": 140.555435,
+      "source": "gsi"
+    },
+    "山形県山形市香澄町3-2-1 山交ビル6階": {
+      "latitude": 38.24649,
+      "longitude": 140.331741,
+      "source": "gsi"
+    },
+    "山形県山形市清住町2-3-51": {
+      "latitude": 38.255203,
+      "longitude": 140.311798,
+      "source": "gsi"
+    },
+    "山形県寒河江市字下河原155-1": {
+      "latitude": 38.400661,
+      "longitude": 140.287872,
+      "source": "gsi"
+    },
+    "山形県新庄市本町4-33 こらっせ新庄5階": {
+      "latitude": 38.766777,
+      "longitude": 140.301041,
+      "source": "gsi"
+    },
+    "福島県福島市北中央1-33": {
+      "latitude": 37.762287,
+      "longitude": 140.432968,
+      "source": "gsi"
+    },
+    "福島県郡山市松木町2-88 イオンタウン内": {
+      "latitude": 37.388954,
+      "longitude": 140.387589,
+      "source": "gsi"
+    },
+    "福島県郡山市西ノ内2-11-35 西部プラザ2階 スーパースポーツゼビオ郡山西ノ内店内": {
+      "latitude": 37.408199,
+      "longitude": 140.363159,
+      "source": "gsi"
+    },
+    "福島県郡山市富久山町八山田字八蒔山1-7": {
+      "latitude": 37.430359,
+      "longitude": 140.383408,
+      "source": "gsi"
+    },
+    "栃木県足利市大月町3-2 アシコタウンあしかが内": {
+      "latitude": 36.3368,
+      "longitude": 139.477295,
+      "source": "gsi"
+    },
+    "栃木県宇都宮市上戸祭町216-1": {
+      "latitude": 36.591991,
+      "longitude": 139.864059,
+      "source": "gsi"
+    },
+    "栃木県宇都宮市桜5-2-5": {
+      "latitude": 36.563923,
+      "longitude": 139.867126,
+      "source": "gsi"
+    },
+    "栃木県宇都宮市インターパーク4-2-3": {
+      "latitude": 36.49514,
+      "longitude": 139.911209,
+      "source": "gsi"
+    },
+    "栃木県宇都宮市西川田町287-1": {
+      "latitude": 36.524029,
+      "longitude": 139.848892,
+      "source": "gsi"
+    },
+    "栃木県那須塩原市上厚崎133-1": {
+      "latitude": 36.955578,
+      "longitude": 140.029312,
+      "source": "gsi"
+    },
+    "栃木県栃木市片柳町2-2-2": {
+      "latitude": 36.371254,
+      "longitude": 139.727539,
+      "source": "gsi"
+    },
+    "茨城県土浦市中村南4-11-7": {
+      "latitude": 36.040058,
+      "longitude": 140.164383,
+      "source": "gsi"
+    },
+    "茨城県土浦市川口1-11-5 TCビル5階": {
+      "latitude": 36.081234,
+      "longitude": 140.202271,
+      "source": "gsi"
+    },
+    "茨城県守谷市松ヶ丘3−21−1": {
+      "latitude": 35.938385,
+      "longitude": 139.986725,
+      "source": "gsi"
+    },
+    "茨城県牛久市南2-34-13": {
+      "latitude": 35.973049,
+      "longitude": 140.147415,
+      "source": "gsi"
+    },
+    "茨城県つくば市稲岡66-1 外部棟L区画": {
+      "latitude": 36.034595,
+      "longitude": 140.132721,
+      "source": "gsi"
+    },
+    "茨城県つくば市東光台4-18-2": {
+      "latitude": 36.093372,
+      "longitude": 140.067352,
+      "source": "gsi"
+    },
+    "茨城県下妻市田下35-1": {
+      "latitude": 36.168053,
+      "longitude": 139.965546,
+      "source": "gsi"
+    },
+    "茨城県水戸市笠原町978-39": {
+      "latitude": 36.340679,
+      "longitude": 140.444077,
+      "source": "gsi"
+    },
+    "茨城県高萩市高戸462": {
+      "latitude": 36.724125,
+      "longitude": 140.72049,
+      "source": "gsi"
+    },
+    "群馬県前橋市国領町2-15-10": {
+      "latitude": 36.405277,
+      "longitude": 139.069138,
+      "source": "gsi"
+    },
+    "群馬県高崎市中尾町44 アカマルA館1階": {
+      "latitude": 36.369942,
+      "longitude": 139.027267,
+      "source": "gsi"
+    },
+    "群馬県高崎市飯塚町382-13": {
+      "latitude": 36.343124,
+      "longitude": 139.006577,
+      "source": "gsi"
+    },
+    "群馬県伊勢崎市東本町107-1": {
+      "latitude": 36.316158,
+      "longitude": 139.206833,
+      "source": "gsi"
+    },
+    "群馬県太田市下浜田町474-8": {
+      "latitude": 36.280449,
+      "longitude": 139.364197,
+      "source": "gsi"
+    },
+    "埼玉県川口市元郷2-15-3": {
+      "latitude": 35.796741,
+      "longitude": 139.729401,
+      "source": "gsi"
+    },
+    "埼玉県さいたま市浦和区上木崎2-3-6": {
+      "latitude": 35.88689,
+      "longitude": 139.639023,
+      "source": "gsi"
+    },
+    "埼玉県さいたま市中央区新都心8 さいたまスーパーアリーナ6階": {
+      "latitude": 35.896194,
+      "longitude": 139.630676,
+      "source": "gsi"
+    },
+    "埼玉県さいたま市大宮区桜木町2-1-1 アルシェビル7階": {
+      "latitude": 35.906166,
+      "longitude": 139.622147,
+      "source": "gsi"
+    },
+    "埼玉県さいたま市北区日進町2-1916-8 イスタ!日進3・4階": {
+      "latitude": 35.935169,
+      "longitude": 139.608902,
+      "source": "gsi"
+    },
+    "埼玉県さいたま市南区文蔵1-8-1": {
+      "latitude": 35.84343,
+      "longitude": 139.67337,
+      "source": "gsi"
+    },
+    "埼玉県さいたま市見沼区大和田町2-1776": {
+      "latitude": 35.932755,
+      "longitude": 139.647888,
+      "source": "gsi"
+    },
+    "埼玉県川口市並木元町1-64": {
+      "latitude": 35.807926,
+      "longitude": 139.716415,
+      "source": "gsi"
+    },
+    "埼玉県川口市東川口1-2-1": {
+      "latitude": 35.876209,
+      "longitude": 139.743774,
+      "source": "gsi"
+    },
+    "埼玉県吉川市保1-13-3 ライフ吉川駅前店2階": {
+      "latitude": 35.878368,
+      "longitude": 139.844208,
+      "source": "gsi"
+    },
+    "埼玉県越谷市大沢3-4-21": {
+      "latitude": 35.901997,
+      "longitude": 139.780106,
+      "source": "gsi"
+    },
+    "埼玉県越谷市千間台西2-1-1": {
+      "latitude": 35.933994,
+      "longitude": 139.774612,
+      "source": "gsi"
+    },
+    "埼玉県春日部市下柳1520": {
+      "latitude": 35.987576,
+      "longitude": 139.788605,
+      "source": "gsi"
+    },
+    "埼玉県春日部市米島1185": {
+      "latitude": 35.979847,
+      "longitude": 139.805206,
+      "source": "gsi"
+    },
+    "埼玉県川越市泉町1-1 UNICUS南古谷内フィットネス棟1階": {
+      "latitude": 35.905621,
+      "longitude": 139.513016,
+      "source": "gsi"
+    },
+    "埼玉県富士見市鶴瀬東2-22-25": {
+      "latitude": 35.848587,
+      "longitude": 139.537079,
+      "source": "gsi"
+    },
+    "埼玉県富士見市ふじみ野西1-19-1": {
+      "latitude": 35.860107,
+      "longitude": 139.522049,
+      "source": "gsi"
+    },
+    "埼玉県ふじみ野市うれし野2-10-35 トナリエふじみ野E-2F": {
+      "latitude": 35.858311,
+      "longitude": 139.52504,
+      "source": "gsi"
+    },
+    "埼玉県熊谷市筑波3-202": {
+      "latitude": 36.139412,
+      "longitude": 139.392044,
+      "source": "gsi"
+    },
+    "埼玉県鴻巣市本町1-2-1": {
+      "latitude": 36.06068,
+      "longitude": 139.508881,
+      "source": "gsi"
+    },
+    "埼玉県久喜市久喜中央1-1-20 クッキープラザ4F": {
+      "latitude": 36.066628,
+      "longitude": 139.676788,
+      "source": "gsi"
+    },
+    "埼玉県川越市新富町1丁目3番12": {
+      "latitude": 35.916039,
+      "longitude": 139.482925,
+      "source": "gsi"
+    },
+    "千葉県千葉市美浜区若葉3-1-37 幕張ベイパークウェルネスセンター": {
+      "latitude": 35.649914,
+      "longitude": 140.049454,
+      "source": "gsi"
+    },
+    "千葉県千葉市美浜区中瀬2-6 WBGマリブウエスト35階": {
+      "latitude": 35.648041,
+      "longitude": 140.038834,
+      "source": "gsi"
+    },
+    "千葉県千葉市美浜区ひび野2-4 幕張プレナ3階": {
+      "latitude": 35.647892,
+      "longitude": 140.040405,
+      "source": "gsi"
+    },
+    "千葉県千葉市若葉区千城台北3-21-1 ラ・パーク4階": {
+      "latitude": 35.622665,
+      "longitude": 140.189178,
+      "source": "gsi"
+    },
+    "千葉県流山市東初石6-183-1": {
+      "latitude": 35.891865,
+      "longitude": 139.916046,
+      "source": "gsi"
+    },
+    "千葉県印西市牧の原2-4": {
+      "latitude": 35.806999,
+      "longitude": 140.155777,
+      "source": "gsi"
+    },
+    "千葉県印西市中央南1-8 千葉ニュータウン駅前センタービル3階": {
+      "latitude": 35.798595,
+      "longitude": 140.117126,
+      "source": "gsi"
+    },
+    "千葉県松戸市上本郷358": {
+      "latitude": 35.797642,
+      "longitude": 139.909454,
+      "source": "gsi"
+    },
+    "千葉県市川市行徳駅前2-3-1": {
+      "latitude": 35.683121,
+      "longitude": 139.914185,
+      "source": "gsi"
+    },
+    "千葉県船橋市山手3-9-27": {
+      "latitude": 35.717533,
+      "longitude": 139.977753,
+      "source": "gsi"
+    },
+    "千葉県八千代市緑が丘2-1-2": {
+      "latitude": 35.727856,
+      "longitude": 140.072845,
+      "source": "gsi"
+    },
+    "千葉県柏市豊四季135-108": {
+      "latitude": 35.866505,
+      "longitude": 139.935379,
+      "source": "gsi"
+    },
+    "千葉県柏市大山台2-3-1": {
+      "latitude": 35.882629,
+      "longitude": 139.969238,
+      "source": "gsi"
+    },
+    "千葉県柏市豊四季509-58 キュア・ラ内5・6階": {
+      "latitude": 35.844109,
+      "longitude": 139.953384,
+      "source": "gsi"
+    },
+    "千葉県浦安市北栄1-13-25 西友パートII5F": {
+      "latitude": 35.66581,
+      "longitude": 139.893646,
+      "source": "gsi"
+    },
+    "千葉県浦安市今川4-1-40": {
+      "latitude": 35.64304,
+      "longitude": 139.904907,
+      "source": "gsi"
+    },
+    "千葉県佐倉市上志津1641-1": {
+      "latitude": 35.716724,
+      "longitude": 140.142502,
+      "source": "gsi"
+    },
+    "千葉県成田市赤坂2-1-14 ボンベルタ成田別館1F": {
+      "latitude": 35.778236,
+      "longitude": 140.290726,
+      "source": "gsi"
+    },
+    "千葉県成田市公津の杜1-10-1": {
+      "latitude": 35.761581,
+      "longitude": 140.292709,
+      "source": "gsi"
+    },
+    "千葉県富里市七栄644-1": {
+      "latitude": 35.741531,
+      "longitude": 140.315338,
+      "source": "gsi"
+    },
+    "千葉県香取市北2-7-15": {
+      "latitude": 35.897625,
+      "longitude": 140.493332,
+      "source": "gsi"
+    },
+    "千葉県木更津市請西2-5-15": {
+      "latitude": 35.374317,
+      "longitude": 139.943192,
+      "source": "gsi"
+    },
+    "千葉県茂原市東茂原15-1": {
+      "latitude": 35.413956,
+      "longitude": 140.32016,
+      "source": "gsi"
+    },
+    "千葉県長生郡長柄町上野521-4": {
+      "latitude": 35.47533,
+      "longitude": 140.240356,
+      "source": "gsi"
+    },
+    "東京都千代田区六番町13番地2 桃園学園ビル": {
+      "latitude": 35.686192,
+      "longitude": 139.732376,
+      "source": "gsi"
+    },
+    "東京都江戸川区西葛西6-16-1 3~7F": {
+      "latitude": 35.663647,
+      "longitude": 139.859467,
+      "source": "gsi"
+    },
+    "東京都中央区銀座3丁目4-12 文祥堂銀座ビルB1・B2F": {
+      "latitude": 35.672558,
+      "longitude": 139.765289,
+      "source": "gsi"
+    },
+    "東京都中央区銀座1-2-1 東京都高速道路紺屋ビル 2F": {
+      "latitude": 35.675804,
+      "longitude": 139.766449,
+      "source": "gsi"
+    },
+    "東京都港区海岸1-2-3 汐留芝離宮ビルディング2階": {
+      "latitude": 35.656849,
+      "longitude": 139.759186,
+      "source": "gsi"
+    },
+    "東京都墨田区京島1-47-10": {
+      "latitude": 35.718689,
+      "longitude": 139.821793,
+      "source": "gsi"
+    },
+    "東京都足立区千住1-4-1 東京芸術センター5階": {
+      "latitude": 35.746788,
+      "longitude": 139.80011,
+      "source": "gsi"
+    },
+    "東京都足立区竹の塚2-8-25": {
+      "latitude": 35.789856,
+      "longitude": 139.795471,
+      "source": "gsi"
+    },
+    "東京都江戸川区一之江8-11-1": {
+      "latitude": 35.68528,
+      "longitude": 139.882767,
+      "source": "gsi"
+    },
+    "東京都江東区東陽2-2-20": {
+      "latitude": 35.666416,
+      "longitude": 139.816544,
+      "source": "gsi"
+    },
+    "東京都江東区南砂3-3-6": {
+      "latitude": 35.672211,
+      "longitude": 139.826416,
+      "source": "gsi"
+    },
+    "東京都江東区南砂6-7-15": {
+      "latitude": 35.672672,
+      "longitude": 139.835953,
+      "source": "gsi"
+    },
+    "東京都品川区東大井5-2-1 K-15ビル4階": {
+      "latitude": 35.608265,
+      "longitude": 139.73555,
+      "source": "gsi"
+    },
+    "東京都品川区旗の台3-14-12": {
+      "latitude": 35.604534,
+      "longitude": 139.704987,
+      "source": "gsi"
+    },
+    "東京都大田区山王2-4-1 大森駅前ビル6階": {
+      "latitude": 35.588875,
+      "longitude": 139.727402,
+      "source": "gsi"
+    },
+    "東京都渋谷区笹塚1-50-1 DAIWA笹塚タワー別館": {
+      "latitude": 35.674019,
+      "longitude": 139.671356,
+      "source": "gsi"
+    },
+    "東京都新宿区霞ヶ丘町11-1 神宮スケート場2階": {
+      "latitude": 35.680084,
+      "longitude": 139.715607,
+      "source": "gsi"
+    },
+    "東京都豊島区北大塚2-24-20 永信ビル3階": {
+      "latitude": 35.733543,
+      "longitude": 139.728745,
+      "source": "gsi"
+    },
+    "東京都豊島区長崎5-1-23": {
+      "latitude": 35.731571,
+      "longitude": 139.682449,
+      "source": "gsi"
+    },
+    "東京都練馬区高野台1-7-17 NFプラザ3F・4F": {
+      "latitude": 35.741123,
+      "longitude": 139.617416,
+      "source": "gsi"
+    },
+    "東京都武蔵野市境南町2-8-19 小田急バスビル2階": {
+      "latitude": 35.700684,
+      "longitude": 139.543793,
+      "source": "gsi"
+    },
+    "東京都立川市曙町2-39-3 立川高島屋S.C. 7階": {
+      "latitude": 35.700424,
+      "longitude": 139.4133,
+      "source": "gsi"
+    },
+    "東京都府中市宮西町1-4-1 フラココ第8ビル4階": {
+      "latitude": 35.671703,
+      "longitude": 139.478622,
+      "source": "gsi"
+    },
+    "東京都国立市中1-9-30 国立せきやビル5F": {
+      "latitude": 35.697727,
+      "longitude": 139.445435,
+      "source": "gsi"
+    },
+    "東京都八王子市南大沢2丁目30番地 サザンウインズ南大沢 2F": {
+      "latitude": 35.613979,
+      "longitude": 139.381302,
+      "source": "gsi"
+    },
+    "東京都多摩市関戸4-72 聖蹟桜ヶ丘OPA6F": {
+      "latitude": 35.649632,
+      "longitude": 139.447052,
+      "source": "gsi"
+    },
+    "東京都東村山市栄町1-28": {
+      "latitude": 35.751945,
+      "longitude": 139.476181,
+      "source": "gsi"
+    },
+    "東京都町田市原町田4丁目1-14 プラザ町田4F": {
+      "latitude": 35.540924,
+      "longitude": 139.448471,
+      "source": "gsi"
+    },
+    "神奈川県横須賀市本町2-1-12コースカベイサイドストアーズ5階": {
+      "latitude": 35.282131,
+      "longitude": 139.665558,
+      "source": "gsi"
+    },
+    "神奈川県横浜市中区本町4-43 A-PLACE馬車道": {
+      "latitude": 35.449257,
+      "longitude": 139.637344,
+      "source": "gsi"
+    },
+    "神奈川県横浜市保土ケ谷区上星川3丁目1-1": {
+      "latitude": 35.467758,
+      "longitude": 139.579773,
+      "source": "gsi"
+    },
+    "神奈川県横浜市戸塚区戸塚町10番地 戸塚モディ6F": {
+      "latitude": 35.400505,
+      "longitude": 139.534561,
+      "source": "gsi"
+    },
+    "神奈川県横浜市港北区樽町2-6-40": {
+      "latitude": 35.531673,
+      "longitude": 139.636917,
+      "source": "gsi"
+    },
+    "神奈川県横浜市港北区大倉山3-58-17": {
+      "latitude": 35.522842,
+      "longitude": 139.624908,
+      "source": "gsi"
+    },
+    "神奈川県横浜市磯子区杉田1-17-1 プララ杉田4階": {
+      "latitude": 35.383556,
+      "longitude": 139.616302,
+      "source": "gsi"
+    },
+    "神奈川県横浜市金沢区釜利谷東2-3-1": {
+      "latitude": 35.343281,
+      "longitude": 139.617523,
+      "source": "gsi"
+    },
+    "神奈川県川崎市高津区溝口1丁目1番30号 溝の口ブロックスビル3F": {
+      "latitude": 35.599087,
+      "longitude": 139.611191,
+      "source": "gsi"
+    },
+    "神奈川県川崎市中原区下新城1-3-17": {
+      "latitude": 35.579868,
+      "longitude": 139.633835,
+      "source": "gsi"
+    },
+    "神奈川県川崎市多摩区登戸1998-1": {
+      "latitude": 35.616531,
+      "longitude": 139.562576,
+      "source": "gsi"
+    },
+    "神奈川県川崎市多摩区生田7-5-5": {
+      "latitude": 35.615574,
+      "longitude": 139.544144,
+      "source": "gsi"
+    },
+    "神奈川県川崎市宮前区鷺沼3-3-8": {
+      "latitude": 35.580128,
+      "longitude": 139.571777,
+      "source": "gsi"
+    },
+    "神奈川県横須賀市若松2-4 横須賀中央駅前ビル5階": {
+      "latitude": 35.279877,
+      "longitude": 139.671768,
+      "source": "gsi"
+    },
+    "神奈川県厚木市中町2-4-13 本厚木ビル5・6階(本厚木駅北口)": {
+      "latitude": 35.440426,
+      "longitude": 139.365265,
+      "source": "gsi"
+    },
+    "神奈川県厚木市中町3-3-9": {
+      "latitude": 35.440014,
+      "longitude": 139.360504,
+      "source": "gsi"
+    },
+    "神奈川県小田原市鴨宮235": {
+      "latitude": 35.278561,
+      "longitude": 139.178284,
+      "source": "gsi"
+    },
+    "神奈川県藤沢市辻堂2-7-1 湘南パールビル3・4階": {
+      "latitude": 35.336494,
+      "longitude": 139.446548,
+      "source": "gsi"
+    },
+    "神奈川県藤沢市藤沢109-6 湘南NDビル5階": {
+      "latitude": 35.339657,
+      "longitude": 139.489319,
+      "source": "gsi"
+    },
+    "神奈川県茅ヶ崎市元町13-1": {
+      "latitude": 35.332718,
+      "longitude": 139.409653,
+      "source": "gsi"
+    },
+    "神奈川県茅ヶ崎市矢畑782": {
+      "latitude": 35.336742,
+      "longitude": 139.400314,
+      "source": "gsi"
+    },
+    "神奈川県平塚市代官町1-16": {
+      "latitude": 35.327827,
+      "longitude": 139.352905,
+      "source": "gsi"
+    },
+    "新潟県新潟市東区中山6-3-35": {
+      "latitude": 37.912334,
+      "longitude": 139.081238,
+      "source": "gsi"
+    },
+    "長野県長野市三輪2-2-9": {
+      "latitude": 36.659069,
+      "longitude": 138.210983,
+      "source": "gsi"
+    },
+    "長野県長野市川中島町今井原11-5": {
+      "latitude": 36.593323,
+      "longitude": 138.145218,
+      "source": "gsi"
+    },
+    "山梨県甲斐市玉川181": {
+      "latitude": 35.636852,
+      "longitude": 138.5215,
+      "source": "gsi"
+    },
+    "山梨県甲府市青葉町8-40": {
+      "latitude": 35.646599,
+      "longitude": 138.583588,
+      "source": "gsi"
+    },
+    "富山県富山市湊入船町9番1号とやま自遊館5F": {
+      "latitude": 36.707481,
+      "longitude": 137.215576,
+      "source": "gsi"
+    },
+    "富山県小矢部市埴生2-1": {
+      "latitude": 36.667362,
+      "longitude": 136.848648,
+      "source": "gsi"
+    },
+    "石川県野々市市横宮町67−1": {
+      "latitude": 36.535892,
+      "longitude": 136.616928,
+      "source": "gsi"
+    },
+    "石川県野々市市御経塚4-10": {
+      "latitude": 36.548645,
+      "longitude": 136.601624,
+      "source": "gsi"
+    },
+    "石川県小松市八幡イ13-1": {
+      "latitude": 36.392387,
+      "longitude": 136.491623,
+      "source": "gsi"
+    },
+    "石川県白山市徳丸町560": {
+      "latitude": 36.517048,
+      "longitude": 136.575638,
+      "source": "gsi"
+    },
+    "福井県福井市中央一丁目21-35": {
+      "latitude": 36.060665,
+      "longitude": 136.219864,
+      "source": "gsi"
+    },
+    "福井県福井市新田塚1-1-1": {
+      "latitude": 36.088383,
+      "longitude": 136.208389,
+      "source": "gsi"
+    },
+    "福井県越前市新町5-4-4": {
+      "latitude": 35.906464,
+      "longitude": 136.153519,
+      "source": "gsi"
+    },
+    "福井県鯖江市鳥羽1-10-13": {
+      "latitude": 35.986263,
+      "longitude": 136.18985,
+      "source": "gsi"
+    },
+    "静岡県富士市厚原95-3": {
+      "latitude": 35.184837,
+      "longitude": 138.654343,
+      "source": "gsi"
+    },
+    "静岡県御殿場市萩原89-1": {
+      "latitude": 35.311039,
+      "longitude": 138.928177,
+      "source": "gsi"
+    },
+    "静岡県御殿場市川島田1388-1": {
+      "latitude": 35.298416,
+      "longitude": 138.912994,
+      "source": "gsi"
+    },
+    "静岡県静岡市清水区西大曲町6-17": {
+      "latitude": 35.020172,
+      "longitude": 138.472534,
+      "source": "gsi"
+    },
+    "静岡県静岡市清水区幸町11-14": {
+      "latitude": 35.000923,
+      "longitude": 138.491241,
+      "source": "gsi"
+    },
+    "静岡県焼津市三ケ名106-3": {
+      "latitude": 34.852329,
+      "longitude": 138.298553,
+      "source": "gsi"
+    },
+    "静岡県袋井市堀越371-1": {
+      "latitude": 34.750553,
+      "longitude": 137.906174,
+      "source": "gsi"
+    },
+    "愛知県名古屋市熱田区波寄町24-14 COLLECT MARK金山3F": {
+      "latitude": 35.142521,
+      "longitude": 136.902756,
+      "source": "gsi"
+    },
+    "愛知県安城市浜富町6-8 安城コロナワールド内": {
+      "latitude": 34.955349,
+      "longitude": 137.097305,
+      "source": "gsi"
+    },
+    "愛知県豊橋市向山町三ツ塚30-2 向山フォレスタ UNO 1階": {
+      "latitude": 34.756809,
+      "longitude": 137.398148,
+      "source": "gsi"
+    },
+    "愛知県西尾市桜町奥新田2": {
+      "latitude": 34.884048,
+      "longitude": 137.055984,
+      "source": "gsi"
+    },
+    "愛知県名古屋市熱田区六野1-208-4 イオンモール熱田アネックス 1F": {
+      "latitude": 35.136627,
+      "longitude": 136.911407,
+      "source": "gsi"
+    },
+    "愛知県名古屋市緑区徳重1-605": {
+      "latitude": 35.091492,
+      "longitude": 136.999237,
+      "source": "gsi"
+    },
+    "愛知県愛西市柚木町元屋敷曲輪329-11": {
+      "latitude": 35.166084,
+      "longitude": 136.727051,
+      "source": "gsi"
+    },
+    "岐阜県土岐市土岐津町土岐口1372-1 イオンモール土岐内": {
+      "latitude": 35.348499,
+      "longitude": 137.153839,
+      "source": "gsi"
+    },
+    "岐阜県岐阜市大蔵台10-28": {
+      "latitude": 35.452946,
+      "longitude": 136.830902,
+      "source": "gsi"
+    },
+    "三重県四日市市末永町8-33": {
+      "latitude": 34.978027,
+      "longitude": 136.619446,
+      "source": "gsi"
+    },
+    "三重県四日市市富田浜元町11-10": {
+      "latitude": 35.000957,
+      "longitude": 136.653336,
+      "source": "gsi"
+    },
+    "三重県津市桜橋3-53-1": {
+      "latitude": 34.736244,
+      "longitude": 136.520386,
+      "source": "gsi"
+    },
+    "滋賀県大津市真野2-17-1": {
+      "latitude": 35.125973,
+      "longitude": 135.917542,
+      "source": "gsi"
+    },
+    "滋賀県大津市打出浜33-11": {
+      "latitude": 35.00491,
+      "longitude": 135.87738,
+      "source": "gsi"
+    },
+    "滋賀県栗東市綣2-4-5 ウイングプラザ3階": {
+      "latitude": 35.037289,
+      "longitude": 135.981461,
+      "source": "gsi"
+    },
+    "滋賀県草津市西大路町4-32 クサツウエストロイヤルタワー エストピアプラザ3F": {
+      "latitude": 35.024185,
+      "longitude": 135.95871,
+      "source": "gsi"
+    },
+    "滋賀県草津市野路1-15-5 フェリエ6階": {
+      "latitude": 35.003216,
+      "longitude": 135.947662,
+      "source": "gsi"
+    },
+    "滋賀県守山市勝部1-1-17 守山駅前近江鉄道ビル3階": {
+      "latitude": 35.050465,
+      "longitude": 135.994598,
+      "source": "gsi"
+    },
+    "京都府京都市南区東九条西岩本町10-2": {
+      "latitude": 34.983261,
+      "longitude": 135.763489,
+      "source": "gsi"
+    },
+    "京都府京都市中京区西ノ京栂尾町1-1 JR二条駅NKビル2階": {
+      "latitude": 35.010742,
+      "longitude": 135.741241,
+      "source": "gsi"
+    },
+    "京都府京都市伏見区深草綿森町9": {
+      "latitude": 34.962681,
+      "longitude": 135.769882,
+      "source": "gsi"
+    },
+    "京都府亀岡市北古世町2-1-7": {
+      "latitude": 35.012882,
+      "longitude": 135.585373,
+      "source": "gsi"
+    },
+    "大阪府大阪市北区茶屋町15-31 茶屋町クリスタル3・4階": {
+      "latitude": 34.708103,
+      "longitude": 135.499268,
+      "source": "gsi"
+    },
+    "大阪府大阪市淀川区新北野1-9-15 ホテルプラザオーサカ2階": {
+      "latitude": 34.716839,
+      "longitude": 135.480453,
+      "source": "gsi"
+    },
+    "大阪府吹田市江坂町5-20-1": {
+      "latitude": 34.768364,
+      "longitude": 135.497223,
+      "source": "gsi"
+    },
+    "大阪府守口市大日町2-1-18": {
+      "latitude": 34.750031,
+      "longitude": 135.57869,
+      "source": "gsi"
+    },
+    "大阪府枚方市楠葉並木2-30-1-101": {
+      "latitude": 34.860584,
+      "longitude": 135.679443,
+      "source": "gsi"
+    },
+    "大阪府枚方市甲斐田町2-15": {
+      "latitude": 34.823456,
+      "longitude": 135.67038,
+      "source": "gsi"
+    },
+    "大阪府東大阪市加納7-21-24": {
+      "latitude": 34.700535,
+      "longitude": 135.625931,
+      "source": "gsi"
+    },
+    "大阪府岸和田市春木若松町21-1 ラ・パーク岸和田": {
+      "latitude": 34.478291,
+      "longitude": 135.392151,
+      "source": "gsi"
+    },
+    "奈良県香芝市磯壁3-40-1 ジャンボスクエア香芝1・2階": {
+      "latitude": 34.538967,
+      "longitude": 135.702484,
+      "source": "gsi"
+    },
+    "兵庫県宝塚市逆瀬川1丁目13-1 アピア3 B2F": {
+      "latitude": 34.798183,
+      "longitude": 135.351532,
+      "source": "gsi"
+    },
+    "兵庫県神戸市中央区明石町47 ニッケ神戸ビル4・5階": {
+      "latitude": 34.68877,
+      "longitude": 135.191284,
+      "source": "gsi"
+    },
+    "兵庫県神戸市西区糀台5-6-3 神戸西神オリエンタルホテル6階": {
+      "latitude": 34.719322,
+      "longitude": 135.018387,
+      "source": "gsi"
+    },
+    "兵庫県神戸市須磨区中落合2-2": {
+      "latitude": 34.678413,
+      "longitude": 135.09465,
+      "source": "gsi"
+    },
+    "兵庫県姫路市大津区大津町3-3-1": {
+      "latitude": 34.804066,
+      "longitude": 134.606613,
+      "source": "gsi"
+    },
+    "和歌山県和歌山市和歌浦東4-4": {
+      "latitude": 34.187862,
+      "longitude": 135.17778,
+      "source": "gsi"
+    },
+    "和歌山県岩出市金池71-2": {
+      "latitude": 34.273918,
+      "longitude": 135.29213,
+      "source": "gsi"
+    },
+    "鳥取県鳥取市南隈252": {
+      "latitude": 35.520889,
+      "longitude": 134.200974,
+      "source": "gsi"
+    },
+    "島根県松江市朝日町478-18 松山テルサ5F": {
+      "latitude": 35.464073,
+      "longitude": 133.061005,
+      "source": "gsi"
+    },
+    "島根県益田市駅前町37-13": {
+      "latitude": 34.679962,
+      "longitude": 131.837082,
+      "source": "gsi"
+    },
+    "岡山県玉野市宇野1-38-1 メルカ3階": {
+      "latitude": 34.492622,
+      "longitude": 133.945175,
+      "source": "gsi"
+    },
+    "岡山県総社市総社1008": {
+      "latitude": 34.676418,
+      "longitude": 133.760391,
+      "source": "gsi"
+    },
+    "広島県福山市佐波町345": {
+      "latitude": 34.483425,
+      "longitude": 133.33522,
+      "source": "gsi"
+    },
+    "広島県広島市中区基町6-78": {
+      "latitude": 34.397648,
+      "longitude": 132.457809,
+      "source": "gsi"
+    },
+    "広島県広島市中区八丁堀7-11 広島YMCA本館7階": {
+      "latitude": 34.395996,
+      "longitude": 132.462341,
+      "source": "gsi"
+    },
+    "広島県広島市西区井口台2-1-1": {
+      "latitude": 34.377285,
+      "longitude": 132.376862,
+      "source": "gsi"
+    },
+    "広島県呉市宝町2-50 レクレ4階": {
+      "latitude": 34.244289,
+      "longitude": 132.556717,
+      "source": "gsi"
+    },
+    "広島県東広島市八本松西1-3-10": {
+      "latitude": 34.445511,
+      "longitude": 132.677765,
+      "source": "gsi"
+    },
+    "山口県岩国市南岩国町1-1252-1": {
+      "latitude": 34.136322,
+      "longitude": 132.202393,
+      "source": "gsi"
+    },
+    "山口県周南市江口1-1-26": {
+      "latitude": 34.062248,
+      "longitude": 131.794891,
+      "source": "gsi"
+    },
+    "山口県防府市石が口2-3-21": {
+      "latitude": 34.044067,
+      "longitude": 131.561432,
+      "source": "gsi"
+    },
+    "山口県下関市東大和町1-1-47 シーモール下関": {
+      "latitude": 33.947468,
+      "longitude": 130.921967,
+      "source": "gsi"
+    },
+    "山口県下関市東大和町1-8-2": {
+      "latitude": 33.945473,
+      "longitude": 130.922745,
+      "source": "gsi"
+    },
+    "山口県山口市大内長野460": {
+      "latitude": 34.15329,
+      "longitude": 131.517349,
+      "source": "gsi"
+    },
+    "山口県山口市吉敷下東1-6-15": {
+      "latitude": 34.165855,
+      "longitude": 131.447327,
+      "source": "gsi"
+    },
+    "山口県宇部市東岐波1569-1": {
+      "latitude": 33.999374,
+      "longitude": 131.347626,
+      "source": "gsi"
+    },
+    "山口県宇部市明神町3-1-1": {
+      "latitude": 33.931705,
+      "longitude": 131.257629,
+      "source": "gsi"
+    },
+    "山口県山陽小野田市高栄3-6-22": {
+      "latitude": 33.981018,
+      "longitude": 131.173218,
+      "source": "gsi"
+    },
+    "山口県萩市大字山田4286": {
+      "latitude": 34.402367,
+      "longitude": 131.385803,
+      "source": "gsi"
+    },
+    "山口県長門市東深川1394-1": {
+      "latitude": 34.371979,
+      "longitude": 131.18721,
+      "source": "gsi"
+    },
+    "香川県高松市木太町5区2702-1": {
+      "latitude": 34.328091,
+      "longitude": 134.077179,
+      "source": "gsi"
+    },
+    "徳島県徳島市北田宮1-7-25": {
+      "latitude": 34.089237,
+      "longitude": 134.545029,
+      "source": "gsi"
+    },
+    "徳島県徳島市金沢1-2-18": {
+      "latitude": 34.07449,
+      "longitude": 134.581512,
+      "source": "gsi"
+    },
+    "徳島県徳島市山城西3-16": {
+      "latitude": 34.050053,
+      "longitude": 134.557129,
+      "source": "gsi"
+    },
+    "徳島県板野郡藍住町奥野字乾5-7": {
+      "latitude": 34.1287,
+      "longitude": 134.487457,
+      "source": "gsi"
+    },
+    "徳島県吉野川市鴨島町鴨島750": {
+      "latitude": 34.0746,
+      "longitude": 134.358368,
+      "source": "gsi"
+    },
+    "徳島県美馬市脇町大字猪尻字八幡神社下南": {
+      "latitude": 34.064167,
+      "longitude": 134.154587,
+      "source": "gsi"
+    },
+    "愛媛県新居浜市郷5-7-50": {
+      "latitude": 33.958061,
+      "longitude": 133.301468,
+      "source": "gsi"
+    },
+    "福岡県福岡市博多区下川端町3-1 博多リバレインモールB1": {
+      "latitude": 33.595295,
+      "longitude": 130.405487,
+      "source": "gsi"
+    },
+    "福岡県福岡市博多区東光寺町2-6-40 コマーシャルモール博多2F": {
+      "latitude": 33.576847,
+      "longitude": 130.435608,
+      "source": "gsi"
+    },
+    "福岡県飯塚市大字鯰田586-1": {
+      "latitude": 33.668877,
+      "longitude": 130.711548,
+      "source": "gsi"
+    },
+    "福岡県柳川市西浜武992-1": {
+      "latitude": 33.170273,
+      "longitude": 130.388657,
+      "source": "gsi"
+    },
+    "佐賀県西松浦郡有田町南原甲105": {
+      "latitude": 33.188194,
+      "longitude": 129.865677,
+      "source": "gsi"
+    },
+    "大分県中津市大字金手2": {
+      "latitude": 33.584286,
+      "longitude": 131.20546,
+      "source": "gsi"
+    },
+    "熊本県宇城市小川町河江1-1 イオンモール宇城": {
+      "latitude": 32.594955,
+      "longitude": 130.705338,
+      "source": "gsi"
+    },
+    "熊本県合志市幾久富1866-1339": {
+      "latitude": 32.867786,
+      "longitude": 130.772537,
+      "source": "gsi"
+    },
+    "熊本県八代市田中西町10-1": {
+      "latitude": 32.523682,
+      "longitude": 130.598801,
+      "source": "gsi"
+    },
+    "宮崎県宮崎市新別府町江口862-1": {
+      "latitude": 31.924305,
+      "longitude": 131.452423,
+      "source": "gsi"
+    },
+    "宮崎県宮崎市高千穂通2-7-14 フィオーレ古賀3階": {
+      "latitude": 31.916595,
+      "longitude": 131.430405,
+      "source": "gsi"
+    },
+    "宮崎県宮崎市清武町加納乙129": {
+      "latitude": 31.877525,
+      "longitude": 131.396027,
+      "source": "gsi"
+    },
+    "宮崎県都城市宮丸町3021": {
+      "latitude": 31.729034,
+      "longitude": 131.057388,
+      "source": "gsi"
+    },
+    "長崎県諫早市久山町1369番地1": {
+      "latitude": 32.829773,
+      "longitude": 129.995789,
+      "source": "gsi"
+    },
+    "鹿児島県鹿児島市伊敷5-25-53": {
+      "latitude": 31.6283,
+      "longitude": 130.529404,
+      "source": "gsi"
+    },
+    "鹿児島県鹿児島市中央町1-1": {
+      "latitude": 31.58415,
+      "longitude": 130.542221,
+      "source": "gsi"
+    },
+    "鹿児島県鹿児島市宇宿2-18-27": {
+      "latitude": 31.541931,
+      "longitude": 130.539536,
+      "source": "gsi"
+    },
+    "鹿児島県鹿児島市中山1-26-1": {
+      "latitude": 31.550989,
+      "longitude": 130.508133,
+      "source": "gsi"
+    },
+    "鹿児島県鹿屋市新川町603-3": {
+      "latitude": 31.374496,
+      "longitude": 130.862381,
+      "source": "gsi"
+    },
+    "鹿児島県薩摩川内市隈之城351": {
+      "latitude": 31.796478,
+      "longitude": 130.296814,
+      "source": "gsi"
+    },
+    "鹿児島県姶良市東餅田453-1": {
+      "latitude": 31.734119,
+      "longitude": 130.632034,
+      "source": "gsi"
+    },
+    "沖縄県那覇市西2-5-5": {
+      "latitude": 26.214495,
+      "longitude": 127.67067,
+      "source": "gsi"
+    },
+    "沖縄県浦添市沢岻23-1": {
+      "latitude": 26.236193,
+      "longitude": 127.712395,
+      "source": "gsi"
+    },
+    "沖縄県沖縄市美里4-20-1": {
+      "latitude": 26.351835,
+      "longitude": 127.816193,
+      "source": "gsi"
+    },
+    "沖縄県うるま市豊原394-1": {
+      "latitude": 26.34738,
+      "longitude": 127.852348,
+      "source": "gsi"
+    },
+    "北海道札幌市中央区南4条西10丁目 1005-4 5F": {
+      "latitude": 43.054195,
+      "longitude": 141.342957,
+      "source": "gsi"
+    },
+    "北海道札幌市中央区南22条西12-1-1 プロム山鼻2F": {
+      "latitude": 43.030525,
+      "longitude": 141.343399,
+      "source": "gsi"
+    },
+    "北海道札幌市東区東苗穂4条2丁目5-1アクロスプラザ東苗穂2F": {
+      "latitude": 43.087021,
+      "longitude": 141.4039,
+      "source": "gsi"
+    },
+    "北海道札幌市南区川沿5条2-3": {
+      "latitude": 42.991997,
+      "longitude": 141.333664,
+      "source": "gsi"
+    },
+    "北海道札幌市西区琴似4条1-1-1コルテナI 2-A": {
+      "latitude": 43.081512,
+      "longitude": 141.303925,
+      "source": "gsi"
+    },
+    "北海道旭川市永山3条15丁目": {
+      "latitude": 43.80521,
+      "longitude": 142.427582,
+      "source": "gsi"
+    },
+    "青森県弘前市大町1-1-2 ショッピングプラザCITY 5F・6F": {
+      "latitude": 40.598141,
+      "longitude": 140.484222,
+      "source": "gsi"
+    },
+    "青森県八戸市諏訪2-21-5": {
+      "latitude": 40.509544,
+      "longitude": 141.520325,
+      "source": "gsi"
+    },
+    "岩手県盛岡市盛岡駅前通15-20東日本不動産ビル201": {
+      "latitude": 39.70343,
+      "longitude": 141.135681,
+      "source": "gsi"
+    },
+    "宮城県仙台市青葉区昭和町1-37": {
+      "latitude": 38.279697,
+      "longitude": 140.871048,
+      "source": "gsi"
+    },
+    "宮城県仙台市青葉区中央4-6-1 1SS30ビル敷地内": {
+      "latitude": 38.256573,
+      "longitude": 140.878006,
+      "source": "gsi"
+    },
+    "宮城県仙台市若林区遠見塚3-2-1": {
+      "latitude": 38.242653,
+      "longitude": 140.915833,
+      "source": "gsi"
+    },
+    "宮城県仙台市泉区泉中央1-1-2": {
+      "latitude": 38.320488,
+      "longitude": 140.88121,
+      "source": "gsi"
+    },
+    "宮城県名取市上余田千刈田289-1": {
+      "latitude": 38.187321,
+      "longitude": 140.89209,
+      "source": "gsi"
+    },
+    "秋田県秋田市広面字蓮沼81": {
+      "latitude": 39.726902,
+      "longitude": 140.149551,
+      "source": "gsi"
+    },
+    "秋田県秋田市土崎港中央6-16-16": {
+      "latitude": 39.759064,
+      "longitude": 140.073044,
+      "source": "gsi"
+    },
+    "秋田県横手市駅前町7-12": {
+      "latitude": 39.308681,
+      "longitude": 140.562225,
+      "source": "gsi"
+    },
+    "山形県東根市中央1-13-1": {
+      "latitude": 38.43375,
+      "longitude": 140.391632,
+      "source": "gsi"
+    },
+    "山形県寒河江市西根字石川西343-1": {
+      "latitude": 38.390282,
+      "longitude": 140.277252,
+      "source": "gsi"
+    },
+    "山形県山形市香澄町3-2-1 山交ビル6F": {
+      "latitude": 38.24649,
+      "longitude": 140.331741,
+      "source": "gsi"
+    },
+    "福島県福島市栄町1-31": {
+      "latitude": 37.756828,
+      "longitude": 140.460617,
+      "source": "gsi"
+    },
+    "福島県いわき市平谷川瀬泉町45": {
+      "latitude": 37.044022,
+      "longitude": 140.898224,
+      "source": "gsi"
+    },
+    "茨城県日立市幸町1-20-1 セントラルビル5F": {
+      "latitude": 36.589947,
+      "longitude": 140.660599,
+      "source": "gsi"
+    },
+    "茨城県ひたちなか市高場1177": {
+      "latitude": 36.419102,
+      "longitude": 140.540543,
+      "source": "gsi"
+    },
+    "茨城県水戸市柵町1-9-2": {
+      "latitude": 36.368206,
+      "longitude": 140.483261,
+      "source": "gsi"
+    },
+    "茨城県土浦市川口1-11-5 TCビル5F": {
+      "latitude": 36.081234,
+      "longitude": 140.202271,
+      "source": "gsi"
+    },
+    "栃木県宇都宮市駅前通り1-4-6 西口ビル10F": {
+      "latitude": 36.55999,
+      "longitude": 139.897095,
+      "source": "gsi"
+    },
+    "栃木県宇都宮市吉野2-8-23": {
+      "latitude": 36.544682,
+      "longitude": 139.871994,
+      "source": "gsi"
+    },
+    "栃木県佐野市上台町2143-2": {
+      "latitude": 36.306992,
+      "longitude": 139.575272,
+      "source": "gsi"
+    },
+    "栃木県鹿沼市栄町3-38-3": {
+      "latitude": 36.547752,
+      "longitude": 139.772079,
+      "source": "gsi"
+    },
+    "栃木県大田原市新富町2-3-33": {
+      "latitude": 36.865223,
+      "longitude": 140.024567,
+      "source": "gsi"
+    },
+    "群馬県前橋市天川大島町1-2-1": {
+      "latitude": 36.383545,
+      "longitude": 139.093796,
+      "source": "gsi"
+    },
+    "群馬県高崎市東町6": {
+      "latitude": 36.325928,
+      "longitude": 139.015869,
+      "source": "gsi"
+    },
+    "埼玉県さいたま市北区宮原町1-855-3": {
+      "latitude": 35.933846,
+      "longitude": 139.624451,
+      "source": "gsi"
+    },
+    "埼玉県さいたま市見沼区島町393ハレノテラスB棟2F": {
+      "latitude": 35.94556,
+      "longitude": 139.651321,
+      "source": "gsi"
+    },
+    "埼玉県さいたま市中央区新都心3-2 ラフレさいたま6F": {
+      "latitude": 35.88966,
+      "longitude": 139.635254,
+      "source": "gsi"
+    },
+    "埼玉県さいたま市中央区新都心8 さいたまスーパーアリーナ6F": {
+      "latitude": 35.896194,
+      "longitude": 139.630676,
+      "source": "gsi"
+    },
+    "埼玉県さいたま市中央区上落合8-3-32HOME’Sさいたま中央店2F": {
+      "latitude": 35.900093,
+      "longitude": 139.623169,
+      "source": "gsi"
+    },
+    "埼玉県さいたま市南区別所7-6-8 ライブタワー3F": {
+      "latitude": 35.845951,
+      "longitude": 139.648346,
+      "source": "gsi"
+    },
+    "埼玉県さいたま市岩槻区加倉1-1-8": {
+      "latitude": 35.94812,
+      "longitude": 139.691193,
+      "source": "gsi"
+    },
+    "埼玉県久喜市久喜中央4-7-41": {
+      "latitude": 36.069489,
+      "longitude": 139.674606,
+      "source": "gsi"
+    },
+    "埼玉県久喜市久喜中央1-1-20 クッキープラザ4階": {
+      "latitude": 36.066628,
+      "longitude": 139.676788,
+      "source": "gsi"
+    },
+    "埼玉県東松山市あずま町3-1-2 C棟": {
+      "latitude": 36.003323,
+      "longitude": 139.406403,
+      "source": "gsi"
+    },
+    "埼玉県三郷市さつき平2-1-1": {
+      "latitude": 35.852757,
+      "longitude": 139.864807,
+      "source": "gsi"
+    },
+    "埼玉県越谷市レイクタウン7丁目2-8": {
+      "latitude": 35.874363,
+      "longitude": 139.816956,
+      "source": "gsi"
+    },
+    "埼玉県越谷市瓦曽根1-20-35": {
+      "latitude": 35.884331,
+      "longitude": 139.787964,
+      "source": "gsi"
+    },
+    "埼玉県川越市富士見町8-6": {
+      "latitude": 35.904182,
+      "longitude": 139.487488,
+      "source": "gsi"
+    },
+    "埼玉県志木市本町5-16-21": {
+      "latitude": 35.825668,
+      "longitude": 139.577148,
+      "source": "gsi"
+    },
+    "埼玉県和光市丸山台1-1-2": {
+      "latitude": 35.787823,
+      "longitude": 139.613495,
+      "source": "gsi"
+    },
+    "埼玉県北本市二ツ家4-103-1": {
+      "latitude": 36.010639,
+      "longitude": 139.552902,
+      "source": "gsi"
+    },
+    "埼玉県所沢市くすのき台1-11-2西武第2ビル1F": {
+      "latitude": 35.786091,
+      "longitude": 139.474945,
+      "source": "gsi"
+    },
+    "埼玉県所沢市小手指1-6 小手指タワーズディアスカイタワー2F・3F": {
+      "latitude": 35.792732,
+      "longitude": 139.437714,
+      "source": "gsi"
+    },
+    "埼玉県行田市緑町8-8": {
+      "latitude": 36.135178,
+      "longitude": 139.467453,
+      "source": "gsi"
+    },
+    "埼玉県羽生市東5-17-31": {
+      "latitude": 36.17527,
+      "longitude": 139.552185,
+      "source": "gsi"
+    },
+    "千葉県千葉市中央区新町18-14 千葉新町ビル": {
+      "latitude": 35.6101,
+      "longitude": 140.113113,
+      "source": "gsi"
+    },
+    "千葉県千葉市中央区南町2-6-10": {
+      "latitude": 35.582653,
+      "longitude": 140.133865,
+      "source": "gsi"
+    },
+    "千葉県千葉市稲毛区長沼町330-50 ワンズモール3F": {
+      "latitude": 35.657303,
+      "longitude": 140.117447,
+      "source": "gsi"
+    },
+    "千葉県千葉市若葉区千城台北3-21-1 ラパーク千城台4F": {
+      "latitude": 35.622665,
+      "longitude": 140.189178,
+      "source": "gsi"
+    },
+    "千葉県千葉市緑区おゆみ野5-43-2": {
+      "latitude": 35.552597,
+      "longitude": 140.185684,
+      "source": "gsi"
+    },
+    "千葉県千葉市緑区あすみが丘1-18-1": {
+      "latitude": 35.52916,
+      "longitude": 140.270599,
+      "source": "gsi"
+    },
+    "千葉県千葉市美浜区高洲3-23-2 稲毛海岸ビル": {
+      "latitude": 35.629089,
+      "longitude": 140.074493,
+      "source": "gsi"
+    },
+    "千葉県千葉市美浜区ひび野2-4プレナ幕張3F": {
+      "latitude": 35.647892,
+      "longitude": 140.040405,
+      "source": "gsi"
+    },
+    "千葉県千葉市美浜区中瀬2-6-1 WBGマリブウエスト34F・35F": {
+      "latitude": 35.648041,
+      "longitude": 140.038834,
+      "source": "gsi"
+    },
+    "千葉県市川市上妙典1554": {
+      "latitude": 35.686356,
+      "longitude": 139.943802,
+      "source": "gsi"
+    },
+    "千葉県市川市八幡3-4-1 アクス本八幡 地下1階": {
+      "latitude": 35.723576,
+      "longitude": 139.926865,
+      "source": "gsi"
+    },
+    "千葉県市川市市川1-3-18 ECS第33ビル4・5F": {
+      "latitude": 35.729889,
+      "longitude": 139.90979,
+      "source": "gsi"
+    },
+    "千葉県市川市行徳駅前2-3-1 ポニービル2F": {
+      "latitude": 35.683121,
+      "longitude": 139.914185,
+      "source": "gsi"
+    },
+    "千葉県浦安市入船1-4-1 ショッパーズプラザ新浦安店4F": {
+      "latitude": 35.649055,
+      "longitude": 139.914963,
+      "source": "gsi"
+    },
+    "千葉県柏市末広町6-1": {
+      "latitude": 35.864319,
+      "longitude": 139.969925,
+      "source": "gsi"
+    },
+    "千葉県松戸市高塚新田123-15": {
+      "latitude": 35.756802,
+      "longitude": 139.942917,
+      "source": "gsi"
+    },
+    "千葉県松戸市新松戸4-20": {
+      "latitude": 35.827187,
+      "longitude": 139.91922,
+      "source": "gsi"
+    },
+    "千葉県松戸市本町4-1": {
+      "latitude": 35.784428,
+      "longitude": 139.899124,
+      "source": "gsi"
+    },
+    "千葉県印西市中央北3-2 イオンモール千葉ニュータウン シネマ・スポーツ棟1F": {
+      "latitude": 35.802212,
+      "longitude": 140.112183,
+      "source": "gsi"
+    },
+    "千葉県鎌ヶ谷市新鎌ヶ谷2-12-1アクロスモール新鎌ヶ谷3F": {
+      "latitude": 35.780136,
+      "longitude": 140.001419,
+      "source": "gsi"
+    },
+    "千葉県習志野市谷津3-1-1": {
+      "latitude": 35.683037,
+      "longitude": 140.006851,
+      "source": "gsi"
+    },
+    "千葉県習志野市津田沼5-12-4 京成津田沼駅前ビル地下1F": {
+      "latitude": 35.682686,
+      "longitude": 140.024017,
+      "source": "gsi"
+    },
+    "千葉県八千代市八千代台東1-1-10 ユアエルム八千代台店5F": {
+      "latitude": 35.700851,
+      "longitude": 140.092453,
+      "source": "gsi"
+    },
+    "千葉県流山市おおたかの森 南一丁目5番地の1 流山おおたかの森S・C3F": {
+      "latitude": 35.870468,
+      "longitude": 139.92627,
+      "source": "gsi"
+    },
+    "千葉県流山市平和台3-6-1": {
+      "latitude": 35.851646,
+      "longitude": 139.903244,
+      "source": "gsi"
+    },
+    "千葉県我孫子市我孫子1-10-2 YSビル4F": {
+      "latitude": 35.873596,
+      "longitude": 140.011002,
+      "source": "gsi"
+    },
+    "千葉県館山市館山83-2": {
+      "latitude": 34.986069,
+      "longitude": 139.852585,
+      "source": "gsi"
+    },
+    "千葉県茂原市小林1740-1": {
+      "latitude": 35.439548,
+      "longitude": 140.282318,
+      "source": "gsi"
+    },
+    "千葉県成田市赤坂2-1-14ボンベルタ成田別館1F": {
+      "latitude": 35.778236,
+      "longitude": 140.290726,
+      "source": "gsi"
+    },
+    "千葉県成田市取香320-1 成田東武ホテルエアポート内": {
+      "latitude": 35.780506,
+      "longitude": 140.379913,
+      "source": "gsi"
+    },
+    "千葉県八街市八街ほ660-1": {
+      "latitude": 35.66526,
+      "longitude": 140.300018,
+      "source": "gsi"
+    },
+    "千葉県袖ケ浦市袖ケ浦駅前1-39-10 「ゆりまち袖ケ浦駅前モール」内": {
+      "latitude": 35.432606,
+      "longitude": 139.956116,
+      "source": "gsi"
+    },
+    "東京都千代田区内幸町1-5-3 新幸橋ビルB1F": {
+      "latitude": 35.669765,
+      "longitude": 139.757599,
+      "source": "gsi"
+    },
+    "東京都千代田区富士見2-10-2飯田橋グラン・ブルーム サクラテラス1階": {
+      "latitude": 35.699116,
+      "longitude": 139.744629,
+      "source": "gsi"
+    },
+    "東京都中央区佃1-11-5 リバーシティー21ピアウエスト フィットネス棟": {
+      "latitude": 35.67025,
+      "longitude": 139.784668,
+      "source": "gsi"
+    },
+    "東京都中央区銀座1-2-1東京高速道路紺屋ビル2F": {
+      "latitude": 35.675804,
+      "longitude": 139.766449,
+      "source": "gsi"
+    },
+    "東京都港区南青山6-1-3 コレッツィオーネB1・B2": {
+      "latitude": 35.661964,
+      "longitude": 139.716034,
+      "source": "gsi"
+    },
+    "東京都新宿区高田馬場1-35-3 ビッグボックス西武スポーツプラザ": {
+      "latitude": 35.712494,
+      "longitude": 139.703873,
+      "source": "gsi"
+    },
+    "東京都品川区大崎2-1-3 ダイワロイネットホテル(フロント2F)": {
+      "latitude": 35.619083,
+      "longitude": 139.726807,
+      "source": "gsi"
+    },
+    "東京都品川区東大井5-2-1 おおい元気館4F": {
+      "latitude": 35.608265,
+      "longitude": 139.73555,
+      "source": "gsi"
+    },
+    "東京都品川区東品川2-2-8 スフィアタワー天王洲24F~26F": {
+      "latitude": 35.623135,
+      "longitude": 139.749969,
+      "source": "gsi"
+    },
+    "東京都品川区南品川6-10-5 東京健康科学専門学校内": {
+      "latitude": 35.609921,
+      "longitude": 139.736359,
+      "source": "gsi"
+    },
+    "東京都目黒区中央町2-26-7": {
+      "latitude": 35.62986,
+      "longitude": 139.690994,
+      "source": "gsi"
+    },
+    "東京都目黒区中根1-14-17": {
+      "latitude": 35.615601,
+      "longitude": 139.671341,
+      "source": "gsi"
+    },
+    "東京都大田区山王2-4-1 大森駅前ビル6・7F": {
+      "latitude": 35.588875,
+      "longitude": 139.727402,
+      "source": "gsi"
+    },
+    "東京都大田区大森北1-8-2 icot大森5F": {
+      "latitude": 35.586987,
+      "longitude": 139.727509,
+      "source": "gsi"
+    },
+    "東京都世田谷区千歳台3-20-2 セントラルウェルネスタウン成城": {
+      "latitude": 35.653271,
+      "longitude": 139.615616,
+      "source": "gsi"
+    },
+    "東京都世田谷区南烏山1-10-22 1F・2F": {
+      "latitude": 35.667217,
+      "longitude": 139.608749,
+      "source": "gsi"
+    },
+    "東京都世田谷区北沢1-46-5": {
+      "latitude": 35.662983,
+      "longitude": 139.669724,
+      "source": "gsi"
+    },
+    "東京都世田谷区用賀2-41-11 平成ビル用賀3F": {
+      "latitude": 35.62561,
+      "longitude": 139.633392,
+      "source": "gsi"
+    },
+    "東京都世田谷区鎌田2-17-1": {
+      "latitude": 35.619099,
+      "longitude": 139.611542,
+      "source": "gsi"
+    },
+    "東京都渋谷区笹塚1-50-1 Daiwa笹塚タワー別館": {
+      "latitude": 35.674019,
+      "longitude": 139.671356,
+      "source": "gsi"
+    },
+    "東京都渋谷区渋谷1-23-16 cocotiビル9F~11F": {
+      "latitude": 35.662025,
+      "longitude": 139.702377,
+      "source": "gsi"
+    },
+    "東京都渋谷区初台1-47-4 第2加藤ビル": {
+      "latitude": 35.682049,
+      "longitude": 139.688095,
+      "source": "gsi"
+    },
+    "東京都渋谷区西原3-8-5 アコルデ代々木上原2F": {
+      "latitude": 35.66946,
+      "longitude": 139.680283,
+      "source": "gsi"
+    },
+    "東京都中野区中野4-3-1-3F サンクオ―レタワー3F": {
+      "latitude": 35.708858,
+      "longitude": 139.66452,
+      "source": "gsi"
+    },
+    "東京都中野区東中野5-1-1 ユニゾンモール2F": {
+      "latitude": 35.706509,
+      "longitude": 139.686829,
+      "source": "gsi"
+    },
+    "東京都豊島区高田1-19-24": {
+      "latitude": 35.714619,
+      "longitude": 139.715775,
+      "source": "gsi"
+    },
+    "東京都豊島区上池袋1-37-16": {
+      "latitude": 35.737175,
+      "longitude": 139.723328,
+      "source": "gsi"
+    },
+    "東京都豊島区北大塚2-24-20永信ビル3F": {
+      "latitude": 35.733543,
+      "longitude": 139.728745,
+      "source": "gsi"
+    },
+    "東京都北区東十条1-24-5": {
+      "latitude": 35.763195,
+      "longitude": 139.73175,
+      "source": "gsi"
+    },
+    "東京都荒川区南千住4-7-1 BiVi3・4F": {
+      "latitude": 35.735828,
+      "longitude": 139.801926,
+      "source": "gsi"
+    },
+    "東京都荒川区西日暮里5-20-1": {
+      "latitude": 35.731556,
+      "longitude": 139.768158,
+      "source": "gsi"
+    },
+    "東京都板橋区前野町2-17-6": {
+      "latitude": 35.763653,
+      "longitude": 139.687088,
+      "source": "gsi"
+    },
+    "東京都板橋区蓮根3-7-10": {
+      "latitude": 35.788567,
+      "longitude": 139.677155,
+      "source": "gsi"
+    },
+    "東京都練馬区南大泉3-27": {
+      "latitude": 35.747288,
+      "longitude": 139.569183,
+      "source": "gsi"
+    },
+    "東京都練馬区光が丘5-1 IMAショッピングセンター5F": {
+      "latitude": 35.76001,
+      "longitude": 139.628372,
+      "source": "gsi"
+    },
+    "東京都練馬区高野台1丁目7-17 NFプラザ 3F4F": {
+      "latitude": 35.741123,
+      "longitude": 139.617416,
+      "source": "gsi"
+    },
+    "東京都足立区花畑5-13-2 ベルクスモール足立花畑2F": {
+      "latitude": 35.80735,
+      "longitude": 139.811432,
+      "source": "gsi"
+    },
+    "東京都足立区西新井栄町1-17-10 ウェルネスタウン西新井3F": {
+      "latitude": 35.774784,
+      "longitude": 139.789597,
+      "source": "gsi"
+    },
+    "東京都足立区西新井栄町1-17-10 ウェルネスタウン西新井5F": {
+      "latitude": 35.774784,
+      "longitude": 139.789597,
+      "source": "gsi"
+    },
+    "東京都足立区竹の塚5-7-3 JOYぷらざビル5F": {
+      "latitude": 35.794231,
+      "longitude": 139.794708,
+      "source": "gsi"
+    },
+    "東京都葛飾区鎌倉4-2-1 タナベビル": {
+      "latitude": 35.744003,
+      "longitude": 139.881531,
+      "source": "gsi"
+    },
+    "東京都葛飾区亀有3-26-1 リリオ館8F": {
+      "latitude": 35.766182,
+      "longitude": 139.848404,
+      "source": "gsi"
+    },
+    "東京都葛飾区立石6-39-8": {
+      "latitude": 35.744156,
+      "longitude": 139.854782,
+      "source": "gsi"
+    },
+    "東京都江戸川区中葛西3-33-12": {
+      "latitude": 35.664635,
+      "longitude": 139.871948,
+      "source": "gsi"
+    },
+    "東京都清瀬市元町1-7-3": {
+      "latitude": 35.774063,
+      "longitude": 139.518295,
+      "source": "gsi"
+    },
+    "東京都武蔵野市吉祥寺南町1-27-1": {
+      "latitude": 35.701477,
+      "longitude": 139.58136,
+      "source": "gsi"
+    },
+    "東京都国分寺市泉町2-9-2": {
+      "latitude": 35.698803,
+      "longitude": 139.466782,
+      "source": "gsi"
+    },
+    "東京都町田市原町田4-5-7 町田ヒカリビル3F": {
+      "latitude": 35.541988,
+      "longitude": 139.448837,
+      "source": "gsi"
+    },
+    "東京都町田市成瀬が丘2-28-1": {
+      "latitude": 35.535454,
+      "longitude": 139.471405,
+      "source": "gsi"
+    },
+    "東京都府中市八幡町1-9": {
+      "latitude": 35.669594,
+      "longitude": 139.485519,
+      "source": "gsi"
+    },
+    "東京都多摩市関戸1-7-5 京王聖蹟桜ヶ丘ショッピングセンターC館3F": {
+      "latitude": 35.652206,
+      "longitude": 139.447906,
+      "source": "gsi"
+    },
+    "東京都多摩市諏訪2-12 ACROSS4F": {
+      "latitude": 35.628056,
+      "longitude": 139.449677,
+      "source": "gsi"
+    },
+    "東京都青梅市東青梅3-24-9": {
+      "latitude": 35.788208,
+      "longitude": 139.278412,
+      "source": "gsi"
+    },
+    "東京都福生市本町46": {
+      "latitude": 35.740757,
+      "longitude": 139.329803,
+      "source": "gsi"
+    },
+    "東京都国立市東2-9-5": {
+      "latitude": 35.69455,
+      "longitude": 139.451538,
+      "source": "gsi"
+    },
+    "東京都八王子市新町2-5 西野ビルディング": {
+      "latitude": 35.660465,
+      "longitude": 139.34108,
+      "source": "gsi"
+    },
+    "東京都八王子市東浅川550-1 イーアス高尾2F": {
+      "latitude": 35.645252,
+      "longitude": 139.292328,
+      "source": "gsi"
+    },
+    "神奈川県川崎市幸区小倉1-1 パークシティ新川崎": {
+      "latitude": 35.546883,
+      "longitude": 139.670105,
+      "source": "gsi"
+    },
+    "神奈川県川崎市中原区新丸子東3-1159": {
+      "latitude": 35.573662,
+      "longitude": 139.661896,
+      "source": "gsi"
+    },
+    "神奈川県川崎市高津区溝口2-10-22": {
+      "latitude": 35.601223,
+      "longitude": 139.610748,
+      "source": "gsi"
+    },
+    "神奈川県茅ケ崎市元町13-1": {
+      "latitude": 35.332718,
+      "longitude": 139.409653,
+      "source": "gsi"
+    },
+    "神奈川県横浜市鶴見区豊岡町9-11": {
+      "latitude": 35.508179,
+      "longitude": 139.672775,
+      "source": "gsi"
+    },
+    "神奈川県横浜市神奈川区片倉1-25-16": {
+      "latitude": 35.489159,
+      "longitude": 139.606277,
+      "source": "gsi"
+    },
+    "神奈川県横浜市金沢区能見台東10-2": {
+      "latitude": 35.357796,
+      "longitude": 139.62439,
+      "source": "gsi"
+    },
+    "神奈川県横浜市金沢区六浦1-16-3": {
+      "latitude": 35.323395,
+      "longitude": 139.619644,
+      "source": "gsi"
+    },
+    "神奈川県横浜市港北区師岡町700-トレッサ横浜北棟4F": {
+      "latitude": 35.524197,
+      "longitude": 139.645462,
+      "source": "gsi"
+    },
+    "神奈川県横浜市港北区樽町2-6-40 T-PLATZ 2F": {
+      "latitude": 35.531673,
+      "longitude": 139.636917,
+      "source": "gsi"
+    },
+    "神奈川県横浜市港北区日吉4-1-1 慶応義塾大学日吉キャンパス内 協生館地下1階": {
+      "latitude": 35.55167,
+      "longitude": 139.650131,
+      "source": "gsi"
+    },
+    "神奈川県横浜市戸塚区川上町97-1": {
+      "latitude": 35.430889,
+      "longitude": 139.553131,
+      "source": "gsi"
+    },
+    "神奈川県横浜市旭区二俣川2-52-4 宮沢第2ビル": {
+      "latitude": 35.461964,
+      "longitude": 139.533463,
+      "source": "gsi"
+    },
+    "神奈川県横浜市緑区長津田みなみ台1-38-1": {
+      "latitude": 35.522141,
+      "longitude": 139.498032,
+      "source": "gsi"
+    },
+    "神奈川県横浜市栄区小菅ヶ谷1-26-1": {
+      "latitude": 35.366005,
+      "longitude": 139.543503,
+      "source": "gsi"
+    },
+    "神奈川県横浜市泉区中田西4-37-1": {
+      "latitude": 35.404156,
+      "longitude": 139.50563,
+      "source": "gsi"
+    },
+    "神奈川県横浜市泉区緑園4-2-1": {
+      "latitude": 35.441013,
+      "longitude": 139.52298,
+      "source": "gsi"
+    },
+    "神奈川県横浜市青葉区市ヶ尾町1162-7": {
+      "latitude": 35.553608,
+      "longitude": 139.542572,
+      "source": "gsi"
+    },
+    "神奈川県横浜市青葉区藤が丘1-36-1": {
+      "latitude": 35.543217,
+      "longitude": 139.528717,
+      "source": "gsi"
+    },
+    "神奈川県横浜市都筑区茅ヶ崎中央55-1パインクリエイトビル5F": {
+      "latitude": 35.546909,
+      "longitude": 139.574127,
+      "source": "gsi"
+    },
+    "神奈川県厚木市中町3-3-9 アーバンプラザ": {
+      "latitude": 35.440014,
+      "longitude": 139.360504,
+      "source": "gsi"
+    },
+    "神奈川県相模原市緑区橋本1-4-1": {
+      "latitude": 35.590893,
+      "longitude": 139.347,
+      "source": "gsi"
+    },
+    "神奈川県藤沢市鵠沼東2-3-101": {
+      "latitude": 35.335236,
+      "longitude": 139.490723,
+      "source": "gsi"
+    },
+    "神奈川県藤沢市湘南台2-6-3湘南台ウエストプラザビル2F・3F": {
+      "latitude": 35.396549,
+      "longitude": 139.464249,
+      "source": "gsi"
+    },
+    "神奈川県藤沢市湘南台2-7-13ウェストプラザ3番地5F": {
+      "latitude": 35.397083,
+      "longitude": 139.464096,
+      "source": "gsi"
+    },
+    "神奈川県藤沢市大庭5254-1": {
+      "latitude": 35.360176,
+      "longitude": 139.447937,
+      "source": "gsi"
+    },
+    "神奈川県平塚市宝町3-1 MNプラザ4・5F": {
+      "latitude": 35.3293,
+      "longitude": 139.350616,
+      "source": "gsi"
+    },
+    "神奈川県横須賀市若松町2-4 横須賀中央駅前ビル5F": {
+      "latitude": 35.279613,
+      "longitude": 139.669983,
+      "source": "gsi"
+    },
+    "神奈川県横須賀市本町2-1-12-5F": {
+      "latitude": 35.282131,
+      "longitude": 139.665558,
+      "source": "gsi"
+    },
+    "神奈川県小田原市栄町1-14-48 ジャンボーナックビル6F": {
+      "latitude": 35.253738,
+      "longitude": 139.157684,
+      "source": "gsi"
+    },
+    "新潟県新潟市中央区西堀通6-866NEXT21 6F~8F": {
+      "latitude": 37.922489,
+      "longitude": 139.043228,
+      "source": "gsi"
+    },
+    "新潟県柏崎市常盤台2-28": {
+      "latitude": 37.359531,
+      "longitude": 138.548187,
+      "source": "gsi"
+    },
+    "新潟県長岡市南町1-5-7 ロイヤルプラザ長岡2F": {
+      "latitude": 37.440849,
+      "longitude": 138.850586,
+      "source": "gsi"
+    },
+    "富山県富山市湊入船町9-1 とやま自遊館5F": {
+      "latitude": 36.707481,
+      "longitude": 137.215576,
+      "source": "gsi"
+    },
+    "石川県金沢市本町2-15-1 ポルテ金沢5F": {
+      "latitude": 36.576385,
+      "longitude": 136.649353,
+      "source": "gsi"
+    },
+    "石川県小松市八幡イ13番地1": {
+      "latitude": 36.392387,
+      "longitude": 136.491623,
+      "source": "gsi"
+    },
+    "福井県福井市中央1丁目3番5号 FUKUMACHI BLOOK 3階": {
+      "latitude": 36.061932,
+      "longitude": 136.221664,
+      "source": "gsi"
+    },
+    "長野県松本市深志2-5-26 松本第一ビル": {
+      "latitude": 36.230499,
+      "longitude": 137.969452,
+      "source": "gsi"
+    },
+    "長野県長野市三輪7-6-31": {
+      "latitude": 36.659466,
+      "longitude": 138.19368,
+      "source": "gsi"
+    },
+    "長野県中野市西1-1-7": {
+      "latitude": 36.744541,
+      "longitude": 138.365784,
+      "source": "gsi"
+    },
+    "長野県伊那市西春近2870-1": {
+      "latitude": 35.813236,
+      "longitude": 137.942642,
+      "source": "gsi"
+    },
+    "静岡県静岡市清水区西大曲6-17": {
+      "latitude": 35.020237,
+      "longitude": 138.472214,
+      "source": "gsi"
+    },
+    "静岡県沼津市大岡1431": {
+      "latitude": 35.101349,
+      "longitude": 138.875977,
+      "source": "gsi"
+    },
+    "静岡県富士市日乃出町26-1": {
+      "latitude": 35.165749,
+      "longitude": 138.668808,
+      "source": "gsi"
+    },
+    "愛知県名古屋市中区錦3-15-30 アパホテル名古屋栄駅前EXCELLENT 3F": {
+      "latitude": 35.17123,
+      "longitude": 136.906876,
+      "source": "gsi"
+    },
+    "愛知県名古屋市西区又穂町6-8": {
+      "latitude": 35.205227,
+      "longitude": 136.892548,
+      "source": "gsi"
+    },
+    "愛知県名古屋市東区東大曽根町46-24": {
+      "latitude": 35.19043,
+      "longitude": 136.936508,
+      "source": "gsi"
+    },
+    "愛知県名古屋市名東区高社1-93アプリーテ星ヶ丘3F": {
+      "latitude": 35.167999,
+      "longitude": 136.993576,
+      "source": "gsi"
+    },
+    "愛知県名古屋市緑区高根山1-1501": {
+      "latitude": 35.046181,
+      "longitude": 136.946121,
+      "source": "gsi"
+    },
+    "愛知県名古屋市熱田区六野1−208−4 イオンモール熱田アネックス 1F": {
+      "latitude": 35.136627,
+      "longitude": 136.911407,
+      "source": "gsi"
+    },
+    "愛知県稲沢市増田北町2": {
+      "latitude": 35.221264,
+      "longitude": 136.825302,
+      "source": "gsi"
+    },
+    "愛知県小牧市中央1-260小牧駅ビル2F": {
+      "latitude": 35.289227,
+      "longitude": 136.927994,
+      "source": "gsi"
+    },
+    "愛知県豊川市末広通3-45-1": {
+      "latitude": 34.830276,
+      "longitude": 137.391861,
+      "source": "gsi"
+    },
+    "愛知県豊田市喜多町2-160コモ・スクウェア3・4F": {
+      "latitude": 35.086658,
+      "longitude": 137.158188,
+      "source": "gsi"
+    },
+    "愛知県春日井市中央台2-1-11": {
+      "latitude": 35.28495,
+      "longitude": 137.047836,
+      "source": "gsi"
+    },
+    "愛知県豊橋市向山町一本松1-1": {
+      "latitude": 34.756493,
+      "longitude": 137.397202,
+      "source": "gsi"
+    },
+    "三重県伊勢市川端町203-2": {
+      "latitude": 34.49247,
+      "longitude": 136.682098,
+      "source": "gsi"
+    },
+    "滋賀県彦根市長曽根南町478": {
+      "latitude": 35.263329,
+      "longitude": 136.243011,
+      "source": "gsi"
+    },
+    "滋賀県栗東市綣2-4-5 ウィングプラザ3F": {
+      "latitude": 35.037289,
+      "longitude": 135.981461,
+      "source": "gsi"
+    },
+    "滋賀県大津市真野2丁目17-1": {
+      "latitude": 35.125973,
+      "longitude": 135.917542,
+      "source": "gsi"
+    },
+    "滋賀県大津市一里山7-1-1フォレオ大津一里山内B1F": {
+      "latitude": 34.974094,
+      "longitude": 135.93364,
+      "source": "gsi"
+    },
+    "滋賀県草津市西渋川1-9-44": {
+      "latitude": 35.026993,
+      "longitude": 135.965271,
+      "source": "gsi"
+    },
+    "京都府京都市右京区太秦御所ノ内町7-13 KCSビル2~4F": {
+      "latitude": 35.013767,
+      "longitude": 135.697708,
+      "source": "gsi"
+    },
+    "京都府京都市伏見区竹中町609": {
+      "latitude": 34.936958,
+      "longitude": 135.762527,
+      "source": "gsi"
+    },
+    "京都府京都市中京区西ノ京栂尾町3番地 JR二条駅NKビル2F": {
+      "latitude": 35.009995,
+      "longitude": 135.741211,
+      "source": "gsi"
+    },
+    "大阪府大阪市都島区友渕町1-5-97": {
+      "latitude": 34.716434,
+      "longitude": 135.529739,
+      "source": "gsi"
+    },
+    "大阪府大阪市淀川区十三本町3-4-21 履正会館": {
+      "latitude": 34.723179,
+      "longitude": 135.482117,
+      "source": "gsi"
+    },
+    "大阪府大阪市淀川区新北野1-9-15 ホテルプラザオーサカ2F": {
+      "latitude": 34.716839,
+      "longitude": 135.480453,
+      "source": "gsi"
+    },
+    "大阪府大阪市淀川区西中島5-5-15 新大阪セントラルタワー北館1F": {
+      "latitude": 34.730522,
+      "longitude": 135.499771,
+      "source": "gsi"
+    },
+    "大阪府大阪市城東区中央1-9-33": {
+      "latitude": 34.700325,
+      "longitude": 135.544708,
+      "source": "gsi"
+    },
+    "大阪府大阪市北区茶屋町15-31 茶屋町クリスタル3F・4F": {
+      "latitude": 34.708103,
+      "longitude": 135.499268,
+      "source": "gsi"
+    },
+    "大阪府大阪市住之江区西住之江1-1-21": {
+      "latitude": 34.605682,
+      "longitude": 135.487442,
+      "source": "gsi"
+    },
+    "大阪府大阪市平野区平野本町2-9-29": {
+      "latitude": 34.622128,
+      "longitude": 135.549149,
+      "source": "gsi"
+    },
+    "大阪府大阪市福島区大開4-1-145": {
+      "latitude": 34.69545,
+      "longitude": 135.463898,
+      "source": "gsi"
+    },
+    "大阪府大阪市福島区福島1-1-51堂島クロスウォーク3F": {
+      "latitude": 34.69487,
+      "longitude": 135.489258,
+      "source": "gsi"
+    },
+    "大阪府泉佐野市下瓦屋2-4-79": {
+      "latitude": 34.424603,
+      "longitude": 135.327103,
+      "source": "gsi"
+    },
+    "大阪府岸和田市春木若松町21-1 ラパーク岸和田1F": {
+      "latitude": 34.478291,
+      "longitude": 135.392151,
+      "source": "gsi"
+    },
+    "大阪府高槻市朝日町1-5": {
+      "latitude": 34.843388,
+      "longitude": 135.597076,
+      "source": "gsi"
+    },
+    "大阪府吹田市芳野町13-50-1 アメニティ江坂内": {
+      "latitude": 34.755905,
+      "longitude": 135.490189,
+      "source": "gsi"
+    },
+    "大阪府八尾市安中町3-2-40": {
+      "latitude": 34.618061,
+      "longitude": 135.595688,
+      "source": "gsi"
+    },
+    "大阪府堺市西区鳳東町2-172-1": {
+      "latitude": 34.530529,
+      "longitude": 135.458511,
+      "source": "gsi"
+    },
+    "兵庫県神戸市中央区波止場町5-6 神戸メリケンパークオリエンタルホテル5F": {
+      "latitude": 34.681499,
+      "longitude": 135.188263,
+      "source": "gsi"
+    },
+    "兵庫県神戸市西区糀台5-6-3-6F": {
+      "latitude": 34.719322,
+      "longitude": 135.018387,
+      "source": "gsi"
+    },
+    "兵庫県神戸市西区井吹台東町1丁目-1-6": {
+      "latitude": 34.700405,
+      "longitude": 135.03125,
+      "source": "gsi"
+    },
+    "兵庫県神戸市灘区桜口町5-1-111 ウェルブ六甲道5番街1番館": {
+      "latitude": 34.712036,
+      "longitude": 135.238724,
+      "source": "gsi"
+    },
+    "兵庫県神戸市東灘区向洋町5-13 クリエイトセンター2F": {
+      "latitude": 34.695518,
+      "longitude": 135.266251,
+      "source": "gsi"
+    },
+    "兵庫県神戸市兵庫区駅前通1-2-1 アルバビル2~5F": {
+      "latitude": 34.668159,
+      "longitude": 135.164032,
+      "source": "gsi"
+    },
+    "兵庫県神戸市垂水区海岸通11-1": {
+      "latitude": 34.630116,
+      "longitude": 135.036804,
+      "source": "gsi"
+    },
+    "兵庫県神戸市中央区明石町47 ニッケ神戸ビル5F": {
+      "latitude": 34.68877,
+      "longitude": 135.191284,
+      "source": "gsi"
+    },
+    "兵庫県芦屋市船戸町4-1 ラポルテ本館5・6F": {
+      "latitude": 34.735313,
+      "longitude": 135.306519,
+      "source": "gsi"
+    },
+    "兵庫県尼崎市潮江1-2-3": {
+      "latitude": 34.732727,
+      "longitude": 135.430878,
+      "source": "gsi"
+    },
+    "兵庫県尼崎市上坂部1丁目1番1号 ビエラ塚口3F": {
+      "latitude": 34.751328,
+      "longitude": 135.425171,
+      "source": "gsi"
+    },
+    "兵庫県姫路市駅前町27-3": {
+      "latitude": 34.828102,
+      "longitude": 134.691437,
+      "source": "gsi"
+    },
+    "兵庫県西宮市甲子園7番町1-27 アルカスビル": {
+      "latitude": 34.723389,
+      "longitude": 135.363617,
+      "source": "gsi"
+    },
+    "兵庫県西宮市甲子園高潮町3-30ノボテル甲子園5F": {
+      "latitude": 34.723667,
+      "longitude": 135.360519,
+      "source": "gsi"
+    },
+    "奈良県奈良市三碓5-3-26": {
+      "latitude": 34.685467,
+      "longitude": 135.734467,
+      "source": "gsi"
+    },
+    "奈良県香芝市磯壁3-40-1 ジャンボスクエア香芝店2F": {
+      "latitude": 34.538967,
+      "longitude": 135.702484,
+      "source": "gsi"
+    },
+    "奈良県北葛城郡河合町高塚台1-8-1 奈良ニッセイエデンの園内": {
+      "latitude": 34.579727,
+      "longitude": 135.723587,
+      "source": "gsi"
+    },
+    "和歌山県和歌山市東蔵前丁39 キーノ和歌山3F": {
+      "latitude": 34.236008,
+      "longitude": 135.166321,
+      "source": "gsi"
+    },
+    "鳥取県鳥取市南隈469": {
+      "latitude": 35.520565,
+      "longitude": 134.199646,
+      "source": "gsi"
+    },
+    "岡山県岡山市北区西島田町8-1": {
+      "latitude": 34.657955,
+      "longitude": 133.908127,
+      "source": "gsi"
+    },
+    "岡山県岡山市南区泉田1-7-6": {
+      "latitude": 34.628384,
+      "longitude": 133.915298,
+      "source": "gsi"
+    },
+    "岡山県倉敷市笹沖1171-6": {
+      "latitude": 34.580894,
+      "longitude": 133.766617,
+      "source": "gsi"
+    },
+    "広島県広島市中区宝町2‐1": {
+      "latitude": 34.386375,
+      "longitude": 132.465012,
+      "source": "gsi"
+    },
+    "広島県広島市西区草津新町2-26-1 アルパーク東棟5F": {
+      "latitude": 34.37373,
+      "longitude": 132.394516,
+      "source": "gsi"
+    },
+    "広島県広島市西区庚午南二丁目34番13号": {
+      "latitude": 34.378632,
+      "longitude": 132.410278,
+      "source": "gsi"
+    },
+    "広島県広島市安佐北区真亀一丁目1番35号": {
+      "latitude": 34.48209,
+      "longitude": 132.521332,
+      "source": "gsi"
+    },
+    "広島県福山市東桜町1-21 エストパルク9~11F": {
+      "latitude": 34.486485,
+      "longitude": 133.362289,
+      "source": "gsi"
+    },
+    "広島県福山市神辺町大字新道上字": {
+      "latitude": 34.543961,
+      "longitude": 133.358551,
+      "source": "gsi"
+    },
+    "広島県廿日市市阿品三丁目1番7号": {
+      "latitude": 34.323738,
+      "longitude": 132.318344,
+      "source": "gsi"
+    },
+    "広島県安芸郡坂町平成ヶ浜三丁目2番11号": {
+      "latitude": 34.338764,
+      "longitude": 132.50975,
+      "source": "gsi"
+    },
+    "山口県山口市吉敷1-6-15": {
+      "latitude": 34.183544,
+      "longitude": 131.411957,
+      "source": "gsi"
+    },
+    "山口県岩国市南岩国町1-20-38": {
+      "latitude": 34.135509,
+      "longitude": 132.201828,
+      "source": "gsi"
+    },
+    "山口県宇部市明神町3-1-1 フジグラン宇部別棟": {
+      "latitude": 33.931705,
+      "longitude": 131.257629,
+      "source": "gsi"
+    },
+    "徳島県徳島市中通町2-16": {
+      "latitude": 34.07074,
+      "longitude": 134.551086,
+      "source": "gsi"
+    },
+    "徳島県徳島市山城西3丁目16": {
+      "latitude": 34.050053,
+      "longitude": 134.557129,
+      "source": "gsi"
+    },
+    "徳島県徳島市北田宮1丁目7-25": {
+      "latitude": 34.089237,
+      "longitude": 134.545029,
+      "source": "gsi"
+    },
+    "徳島県板野郡藍住町奥野字乾5番地7": {
+      "latitude": 34.1287,
+      "longitude": 134.487457,
+      "source": "gsi"
+    },
+    "香川県高松市上天神町266": {
+      "latitude": 34.311382,
+      "longitude": 134.038803,
+      "source": "gsi"
+    },
+    "愛媛県松山市宮西1-5-10フジグランフィッタビル3F~5F": {
+      "latitude": 33.845455,
+      "longitude": 132.752777,
+      "source": "gsi"
+    },
+    "愛媛県松山市和泉南二丁目13番14号": {
+      "latitude": 33.815964,
+      "longitude": 132.760803,
+      "source": "gsi"
+    },
+    "愛媛県松山市南梅本町1296": {
+      "latitude": 33.800613,
+      "longitude": 132.840057,
+      "source": "gsi"
+    },
+    "愛媛県松山市衣山一丁目216": {
+      "latitude": 33.85305,
+      "longitude": 132.746368,
+      "source": "gsi"
+    },
+    "愛媛県新居浜市新須賀町1-8-21": {
+      "latitude": 33.966347,
+      "longitude": 133.284119,
+      "source": "gsi"
+    },
+    "愛媛県伊予郡松前町筒井850番": {
+      "latitude": 33.789639,
+      "longitude": 132.715591,
+      "source": "gsi"
+    },
+    "高知県高知市秦南町1-4-8": {
+      "latitude": 33.575348,
+      "longitude": 133.541473,
+      "source": "gsi"
+    },
+    "福岡県福岡市中央区天神2-2-43 ソラリアプラザ10F": {
+      "latitude": 33.589344,
+      "longitude": 130.398727,
+      "source": "gsi"
+    },
+    "福岡県福岡市東区香椎照葉5-1-15 サンカルナ香椎照葉": {
+      "latitude": 33.662792,
+      "longitude": 130.417313,
+      "source": "gsi"
+    },
+    "福岡県福岡市博多区下川端町3-1博多リバレインモールB1": {
+      "latitude": 33.595295,
+      "longitude": 130.405487,
+      "source": "gsi"
+    },
+    "福岡県福岡市南区柳河内1-2-7": {
+      "latitude": 33.553009,
+      "longitude": 130.406998,
+      "source": "gsi"
+    },
+    "福岡県行橋市中央2-6-12": {
+      "latitude": 33.727829,
+      "longitude": 130.974609,
+      "source": "gsi"
+    },
+    "福岡県古賀市新久保1-2-10": {
+      "latitude": 33.734474,
+      "longitude": 130.476959,
+      "source": "gsi"
+    },
+    "長崎県長崎市葉山1-6-37 西友道の尾店パーキング棟": {
+      "latitude": 32.803169,
+      "longitude": 129.850204,
+      "source": "gsi"
+    },
+    "熊本県玉名市築地348": {
+      "latitude": 32.931587,
+      "longitude": 130.526489,
+      "source": "gsi"
+    },
+    "熊本県熊本市南区平成2-50": {
+      "latitude": 32.778374,
+      "longitude": 130.702393,
+      "source": "gsi"
+    },
+    "熊本県熊本市中央区桜町3番10号SAKURA MACHI Kumamoto 4階": {
+      "latitude": 32.800598,
+      "longitude": 130.7043,
+      "source": "gsi"
+    },
+    "大分県大分市古国府4-6-20": {
+      "latitude": 33.216034,
+      "longitude": 131.605927,
+      "source": "gsi"
+    },
+    "大分県中津市金手2": {
+      "latitude": 33.584286,
+      "longitude": 131.20546,
+      "source": "gsi"
+    },
+    "鹿児島県鹿児島市中央町1-1アミュプラザ鹿児島5F": {
+      "latitude": 31.58415,
+      "longitude": 130.542221,
+      "source": "gsi"
+    },
+    "鹿児島県薩摩川内市平佐町4290": {
+      "latitude": 31.81539882,
+      "longitude": 130.3207538,
+      "source": "manual"
+    },
+    "鹿児島県大島郡和泊町和泊135": {
+      "latitude": 27.392166,
+      "longitude": 128.651276,
+      "source": "gsi"
+    },
+    "沖縄県うるま市字豊原417-2": {
+      "latitude": 26.34738,
+      "longitude": 127.852348,
+      "source": "gsi"
+    },
+    "沖縄県浦添市沢岻2-23-1": {
+      "latitude": 26.235054,
+      "longitude": 127.707306,
+      "source": "gsi"
+    },
+    "長野県千曲市上山田高河原3813": {
+      "latitude": 36.533886,
+      "longitude": 138.119971,
+      "source": "manual"
+    },
+    "静岡県浜松市中区鍛冶町100-1": {
+      "latitude": 34.705246,
+      "longitude": 137.73027,
+      "source": "gsi"
+    },
+    "静岡県浜松市中区木戸町1-17 2階": {
+      "latitude": 34.711586,
+      "longitude": 137.742447,
+      "source": "gsi"
+    },
+    "三重県伊賀市佐那具町大多田23-1": {
+      "latitude": 34.8056825,
+      "longitude": 136.17800215,
+      "source": "manual"
+    },
+    "京都府京都市中京区河原町通三条下ル大黒町58 ミーナ京都8階": {
+      "latitude": 35.008156,
+      "longitude": 135.768829,
+      "source": "gsi"
+    },
+    "徳島県阿南市西路見町提外40-6": {
+      "latitude": 33.927759,
+      "longitude": 134.674141,
+      "source": "manual"
+    },
+    "佐賀県伊万里市新天町中島473-3": {
+      "latitude": 33.269481,
+      "longitude": 129.875023,
+      "source": "manual"
+    },
+    "鹿児島県薩摩川内市平佐町字天神迫4290": {
+      "latitude": 31.81539882,
+      "longitude": 130.3207538,
+      "source": "manual"
+    },
+    "北海道恵庭市恵み野里見1-2-1": {
+      "latitude": 42.9061251,
+      "longitude": 141.5735321,
+      "source": "manual"
+    },
+    "東京都杉並区阿佐ヶ谷北2-12-2": {
+      "latitude": 35.705212,
+      "longitude": 139.635193,
+      "source": "gsi"
+    },
+    "神奈川県横浜市港南区中央通12-31-gooday place3F": {
+      "latitude": 35.40124598026051,
+      "longitude": 139.58997831498797,
+      "source": "manual"
+    },
+    "石川県野々市町本町6-141": {
+      "latitude": 36.535404,
+      "longitude": 136.608078,
+      "source": "gsi"
+    },
+    "長野県上田市秋和字金具田116-2": {
+      "latitude": 36.411294697193746,
+      "longitude": 138.22289881543938,
+      "source": "manual"
+    },
+    "静岡県浜松市中区砂山町1107番地 サーラシティ浜松2F": {
+      "latitude": 34.7019,
+      "longitude": 137.734604,
+      "source": "gsi"
+    },
+    "愛知県名古屋市名東区明ヶ丘124-1amiamiビルB1": {
+      "latitude": 35.182415,
+      "longitude": 137.020062,
+      "source": "manual"
+    },
+    "京都府舞鶴市字上安久下アラ田8": {
+      "latitude": 35.451085,
+      "longitude": 135.332386,
+      "source": "manual"
+    },
+    "大阪府泉佐野市りんくう住来北1 りんくうゲートタワービル7F": {
+      "latitude": 34.41449,
+      "longitude": 135.295395,
+      "source": "gsi"
+    },
+    "山口県山口市大内長野山鼻460": {
+      "latitude": 34.153434212801244,
+      "longitude": 131.5085292390869,
+      "source": "manual"
+    },
+    "高知県高知市朝倉字榊甲183番地1": {
+      "latitude": 33.54193668074791,
+      "longitude": 133.4959326152018,
+      "source": "manual"
+    }
+  }
+}

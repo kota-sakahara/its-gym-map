@@ -1,0 +1,20 @@
+{
+  "facilities": [
+    {
+      "code": "001",
+      "name": "コナミスポーツクラブ 札幌",
+      "services": { "fitness": { "category": "3" } },
+      "place": {
+        "address": { "prefecture": "北海道", "municipality": "札幌市", "blockNumber": "1-1", "buildingsEtc": "" },
+        "geographicCoordinates": { "latitude": 43.06, "longitude": 141.35 }
+      }
+    },
+    {
+      "code": "002",
+      "name": "グランサイズ 青山",
+      "services": { "fitness": { "category": "4" } },
+      "place": { "address": { "prefecture": "東京都", "municipality": "港区", "blockNumber": "1-1" } }
+    },
+    { "code": "003", "name": "子ども教室", "services": {}, "place": {} }
+  ]
+}

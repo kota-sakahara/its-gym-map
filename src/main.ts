@@ -14,12 +14,23 @@ import {
   type RankedGym,
 } from "./discovery.ts";
 
-const MAP_STYLE = "https://tiles.openfreemap.org/styles/dark";
+const MAP_STYLE_DARK = "https://tiles.openfreemap.org/styles/dark";
+const MAP_STYLE_LIGHT = "https://tiles.openfreemap.org/styles/positron";
 const GYM_SOURCE = "gym-locations";
 const GYM_LAYER = "gym-pins";
 const GYM_GUIDE_LAYER = "gym-guides";
 const TOKYO_STATION = new LngLat(139.767125, 35.681236);
 const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const THEME_KEY = "its-gym-grid:theme";
+type ThemeMode = "command" | "simple" | "kawaii";
+
+let theme: ThemeMode = "command";
+try {
+  const storedTheme = localStorage.getItem(THEME_KEY);
+  if (storedTheme === "simple" || storedTheme === "kawaii") theme = storedTheme;
+} catch { /* Use the default theme. */ }
+document.documentElement.dataset.theme = theme;
+let mapStyle = theme === "kawaii" ? MAP_STYLE_LIGHT : MAP_STYLE_DARK;
 
 type ReferenceKind = "current" | "tokyo" | "pin";
 type State = {
@@ -37,7 +48,7 @@ app.innerHTML = `
   <div class="map-scanner" aria-hidden="true"></div>
   <header class="status-bar" aria-label="データステータス">
     <a class="wordmark" href="./" aria-label="ITS GYM GRID ホーム">
-      <span class="wordmark-mark">IG</span><span>ITS GYM GRID</span>
+      <span class="wordmark-mark" data-command-copy="IG" data-kawaii-copy="IG">IG</span><span data-command-copy="ITS GYM GRID" data-kawaii-copy="ITS GYM MAP">ITS GYM GRID</span>
     </a>
     <dl class="telemetry">
       <div><dt>VISIBLE</dt><dd id="visible-count">---</dd></div>
@@ -46,23 +57,28 @@ app.innerHTML = `
       <div class="telemetry-clock"><dt>SYSTEM CLOCK / JST</dt><dd><time id="system-clock">----.--.-- // --:--:--</time></dd></div>
       <div class="telemetry-view"><dt>VIEW VECTOR</dt><dd id="view-vector">Z11.0 / B000° / P00°</dd></div>
     </dl>
+    <label class="theme-switcher"><span data-command-copy="DISPLAY MODE" data-kawaii-copy="きせかえ">DISPLAY MODE</span><select id="theme-mode" aria-label="表示モード">
+      <option value="command">COMMAND</option>
+      <option value="simple">SIMPLE</option>
+      <option value="kawaii">KAWAII ✦</option>
+    </select></label>
     <span id="stale-status" class="stale-status" hidden>! DATA STALE</span>
   </header>
   <button id="current-location" class="current-location-control" type="button" aria-live="polite">◎ 現在地へ</button>
   <button id="toggle-3d" class="view-3d-control" type="button" aria-pressed="false">◇ 3D VIEW</button>
   <aside class="panel" aria-labelledby="panel-title">
     <div class="panel-heading">
-      <div><span class="eyebrow">FACILITY SCANNER / 01</span><h1 id="panel-title">都度利用ジムを探す</h1></div>
+      <div><span class="eyebrow" data-command-copy="FACILITY SCANNER / 01" data-kawaii-copy="GYM PICNIC">FACILITY SCANNER / 01</span><h1 id="panel-title">都度利用ジムを探す</h1></div>
       <div class="panel-actions">
         <span class="signal" aria-label="カタログ接続中">SYNC</span>
         <button id="panel-toggle" class="panel-toggle" type="button" aria-expanded="true">− 閉じる</button>
       </div>
     </div>
     <form class="filters" id="filters">
-      <label class="search-field"><span>QUERY</span><input id="query" type="search" autocomplete="off" placeholder="施設名・住所・契約経路" /></label>
+      <label class="search-field"><span data-command-copy="QUERY" data-kawaii-copy="なまえ・場所">QUERY</span><input id="query" type="search" autocomplete="off" placeholder="施設名・住所・契約経路" /></label>
       <div class="filter-grid">
-        <label><span>BRAND</span><select id="brand"><option value="">すべてのブランド</option></select></label>
-        <label><span>PRICE / VISIT</span><select id="price">
+        <label><span data-command-copy="BRAND" data-kawaii-copy="ジムブランド">BRAND</span><select id="brand"><option value="">すべてのブランド</option></select></label>
+        <label><span data-command-copy="PRICE / VISIT" data-kawaii-copy="1回の料金">PRICE / VISIT</span><select id="price">
           <option value="">すべての料金</option>
           <option value="0-499">499円以下</option>
           <option value="500-999">500〜999円</option>
@@ -72,7 +88,7 @@ app.innerHTML = `
       </div>
     </form>
     <div class="reference-tools">
-      <span>REFERENCE POINT</span>
+      <span data-command-copy="REFERENCE POINT" data-kawaii-copy="どこから探す？">REFERENCE POINT</span>
       <button id="center-pin" type="button">＋ 地図中央にピン</button>
       <button id="reset-pin" type="button" disabled>× ピン解除</button>
     </div>
@@ -81,7 +97,7 @@ app.innerHTML = `
     <div id="gym-list" class="gym-list" aria-label="距離順のジム一覧"></div>
   </aside>
   <details class="map-legend" aria-label="地図記号の凡例" open>
-    <summary>MAP LEGEND / 凡例</summary>
+    <summary data-command-copy="MAP LEGEND / 凡例" data-kawaii-copy="地図のしるし">MAP LEGEND / 凡例</summary>
     <div class="legend-grid">
       <span><i class="legend-symbol route-healthpia"></i>へるすぴあ</span>
       <span><i class="legend-symbol route-konami-direct"></i>コナミ直営</span>
@@ -90,19 +106,19 @@ app.innerHTML = `
       <span><i class="legend-origin"></i>現在地 / 東京駅</span>
       <span><i class="legend-origin is-custom"></i>任意の基準ピン</span>
     </div>
-    <small>マゼンタの施設ピンは選択中</small>
+    <small data-command-copy="マゼンタの施設ピンは選択中" data-kawaii-copy="ピンクのピンは選んだジム">マゼンタの施設ピンは選択中</small>
   </details>
   <section id="gym-detail" class="gym-detail" aria-live="polite" aria-labelledby="gym-detail-name" hidden>
     <header class="detail-heading">
-      <span>SELECTED FACILITY / 詳細</span>
-      <button id="detail-close" type="button" aria-label="施設詳細を閉じる">× CLOSE</button>
+      <span data-command-copy="SELECTED FACILITY / 詳細" data-kawaii-copy="ジムの詳細">SELECTED FACILITY / 詳細</span>
+      <button id="detail-close" type="button" aria-label="施設詳細を閉じる" data-command-copy="× CLOSE" data-kawaii-copy="× とじる">× CLOSE</button>
     </header>
     <div id="detail-content"></div>
   </section>
   <button class="reticle" type="button" aria-label="地図を北向きに戻す" title="地図を北向きに戻す">
     <i class="radar-sweep" aria-hidden="true"></i><span class="compass-needle" aria-hidden="true"><b>N</b></span>
   </button>
-  <footer class="site-footer">(C) <a href="https://github.com/kota-sakahara" target="_blank" rel="noreferrer">Kota Sakahara</a> 2026 <span>//</span> <button id="briefing-open" type="button">BRIEFING</button></footer>
+  <footer class="site-footer">(C) <a href="https://github.com/kota-sakahara" target="_blank" rel="noreferrer">Kota Sakahara</a> 2026 <span>//</span> <button id="briefing-open" type="button" data-command-copy="BRIEFING" data-kawaii-copy="はじめに">BRIEFING</button></footer>
   <dialog id="initial-briefing" class="briefing-dialog" aria-labelledby="briefing-title" aria-describedby="briefing-intro">
     <div class="briefing-frame">
       <header class="briefing-header">
@@ -110,39 +126,39 @@ app.innerHTML = `
         <b>PROTOCOL 01</b>
       </header>
       <div class="briefing-content">
-        <p class="briefing-kicker">INITIAL BRIEFING</p>
-        <h2 id="briefing-title">ITS GYM GRID <span>// SYSTEM ACCESS</span></h2>
+        <p class="briefing-kicker" data-command-copy="INITIAL BRIEFING" data-kawaii-copy="ようこそ">INITIAL BRIEFING</p>
+        <h2 id="briefing-title"><b data-command-copy="ITS GYM GRID" data-kawaii-copy="ITS GYM MAP">ITS GYM GRID</b> <span data-command-copy="// SYSTEM ACCESS" data-kawaii-copy="あなたにぴったりのジム探し">// SYSTEM ACCESS</span></h2>
         <p id="briefing-intro" class="briefing-intro">このサイトは、関東ITソフトウェア健康保険組合（ITS）の補助対象ジムを探すための、非公式ナビゲーションシステムです。ITSおよび各施設運営者が提供する公式サービスではありません。</p>
 
         <aside class="training-message">
-          <small>TRAINING MESSAGE</small>
+          <small data-command-copy="TRAINING MESSAGE" data-kawaii-copy="今日のひとこと">TRAINING MESSAGE</small>
           <strong>最高のメニューを考えるより、今日一回ジムへ行く方が強い。</strong>
           <p>近い、安い、なんとなく気になる。理由は何でもOK。<br />今日の目的地を決めて、身体を動かしに行こう。</p>
         </aside>
 
         <div class="briefing-grid">
           <section>
-            <small>DATA ACCURACY // 掲載情報</small>
+            <small data-command-copy="DATA ACCURACY // 掲載情報" data-kawaii-copy="掲載情報について">DATA ACCURACY // 掲載情報</small>
             <p>掲載施設・料金・住所は、画面に表示された最終確認日時点の公開情報です。情報の完全性・正確性・最新性は保証されません。</p>
           </section>
           <section>
-            <small>ACCESS CONDITIONS // 利用条件</small>
+            <small data-command-copy="ACCESS CONDITIONS // 利用条件" data-kawaii-copy="利用するときのこと">ACCESS CONDITIONS // 利用条件</small>
             <p>利用資格、年齢制限、事前登録、必要書類、手数料などは施設や契約経路によって異なります。本サイトは利用資格を判定しません。利用前に必ず「公式情報を開く」から最新情報をご確認ください。</p>
           </section>
           <section>
-            <small>POSITION DATA // 位置情報</small>
+            <small data-command-copy="POSITION DATA // 位置情報" data-kawaii-copy="現在地について">POSITION DATA // 位置情報</small>
             <p>表示距離は基準地点からの直線距離であり、実際の経路や所要時間ではありません。現在地はブラウザ内での検索と距離計算に利用し、本サイトには保存しません。地図表示や外部リンクの利用時には、外部サービスとの通信が発生します。</p>
           </section>
         </div>
 
         <div class="briefing-final">
-          <small>FINAL CHECK</small>
+          <small data-command-copy="FINAL CHECK" data-kawaii-copy="だいじなおねがい">FINAL CHECK</small>
           <p>本サイトの情報だけを根拠に利用を決定せず、最終的な料金・利用可否・営業状況を公式サイトまたは施設へご確認ください。</p>
         </div>
       </div>
       <footer class="briefing-action">
         <small>このブリーフィングは初回のみ表示されます。フッターからいつでも再確認できます。</small>
-        <button id="briefing-accept" type="button"><span>BRIEFING ACKNOWLEDGED</span>内容を確認してシステムを起動</button>
+        <button id="briefing-accept" type="button"><span data-command-copy="BRIEFING ACKNOWLEDGED" data-kawaii-copy="確認しました">BRIEFING ACKNOWLEDGED</span><small data-command-copy="内容を確認してシステムを起動" data-kawaii-copy="ジムを見つけにいく">内容を確認してシステムを起動</small></button>
       </footer>
     </div>
   </dialog>
@@ -181,6 +197,27 @@ const compassNeedle = required<HTMLElement>(".compass-needle");
 const briefingDialog = required<HTMLDialogElement>("#initial-briefing");
 const briefingAcceptButton = required<HTMLButtonElement>("#briefing-accept");
 const briefingOpenButton = required<HTMLButtonElement>("#briefing-open");
+const themeSelect = required<HTMLSelectElement>("#theme-mode");
+
+const updateThemeCopy = (): void => document.querySelectorAll<HTMLElement>("[data-command-copy]").forEach((element) => {
+  element.textContent = theme === "kawaii" ? element.dataset.kawaiiCopy! : element.dataset.commandCopy!;
+});
+
+themeSelect.value = theme;
+updateThemeCopy();
+themeSelect.addEventListener("change", () => {
+  theme = themeSelect.value as ThemeMode;
+  document.documentElement.dataset.theme = theme;
+  updateThemeCopy();
+  update3dButton(is3d);
+  const nextMapStyle = theme === "kawaii" ? MAP_STYLE_LIGHT : MAP_STYLE_DARK;
+  if (mapStyle !== nextMapStyle) {
+    mapStyle = nextMapStyle;
+    map.setStyle(mapStyle);
+  } else if (gyms.length && map.isStyleLoaded()) updateGymImages();
+  if (gyms.length) render();
+  try { localStorage.setItem(THEME_KEY, theme); } catch { /* Storage may be unavailable. */ }
+});
 
 if (matchMedia("(max-width: 760px)").matches) mapLegend.open = false;
 
@@ -193,10 +230,13 @@ const state: State = {
 
 const map = new maplibregl.Map({
   container: "map",
-  style: MAP_STYLE,
+  style: mapStyle,
   center: TOKYO_STATION,
   zoom: 11,
   attributionControl: { compact: true },
+});
+map.on("style.load", () => {
+  if (gyms.length && !map.getSource(GYM_SOURCE)) createGymLayer();
 });
 map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "bottom-right");
 map.on("rotate", () => { compassNeedle.style.transform = `rotate(${-map.getBearing()}deg)`; });
@@ -206,11 +246,16 @@ map.on("move", () => {
 });
 compassButton.addEventListener("click", () => map.easeTo({ bearing: 0, duration: reduceMotion ? 0 : 500 }));
 let is3d = false;
+const update3dButton = (active: boolean): void => {
+  view3dButton.textContent = theme === "kawaii"
+    ? active ? "平面で見る" : "立体で見る"
+    : active ? "□ 2D VIEW" : "◇ 3D VIEW";
+};
 map.on("pitch", () => {
   const active = map.getPitch() > 30;
   if (active === is3d) return;
   is3d = active;
-  view3dButton.textContent = active ? "□ 2D VIEW" : "◇ 3D VIEW";
+  update3dButton(active);
   view3dButton.setAttribute("aria-pressed", String(active));
   if (map.getLayer(GYM_GUIDE_LAYER)) {
     map.setLayoutProperty(GYM_GUIDE_LAYER, "visibility", active ? "visible" : "none");
@@ -234,6 +279,7 @@ let visibleGyms: RankedGym[] = [];
 let offsets = new Map<string, [number, number]>();
 let referenceMarker: Marker | undefined;
 let currentLocationMarker: Marker | undefined;
+let gymLayerEventsBound = false;
 
 const escapeHtml = (value: string): string => value.replace(/[&<>"]/g, (character) => ({
   "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;",
@@ -284,10 +330,10 @@ function renderGymDetail(gym: RankedGym): void {
     <div class="detail-meta"><b>${escapeHtml(gym.brand)}</b><span>${escapeHtml(routeLabel(gym.contractRoute))}</span></div>
     <h2 id="gym-detail-name">${escapeHtml(gym.name)}</h2>
     <div class="detail-stats">
-      <div><small>ITS PRICE / VISIT</small><div class="detail-fees">${fees}</div></div>
-      <div><small>DISTANCE / STRAIGHT</small><strong>${formatDistance(gym.distanceMeters)}</strong></div>
+      <div><small>${theme === "kawaii" ? "ITS利用料金" : "ITS PRICE / VISIT"}</small><div class="detail-fees">${fees}</div></div>
+      <div><small>${theme === "kawaii" ? "直線距離" : "DISTANCE / STRAIGHT"}</small><strong>${formatDistance(gym.distanceMeters)}</strong></div>
     </div>
-    <p class="detail-address"><small>ADDRESS</small>${escapeHtml(gym.address)}</p>
+    <p class="detail-address"><small>${theme === "kawaii" ? "住所" : "ADDRESS"}</small>${escapeHtml(gym.address)}</p>
     <div class="detail-links">
       <a class="detail-link" href="${escapeHtml(gym.facilitySource.url)}" target="_blank" rel="noreferrer">施設公式情報を開く ↗</a>
       <a class="detail-link is-google" href="${searchUrl}" target="_blank" rel="noreferrer">Google検索 ↗</a>
@@ -329,8 +375,8 @@ function render(): void {
   originLabel.textContent = referenceLabel(state.referenceKind);
   resetPinButton.disabled = state.referenceKind !== "pin";
   resultSummary.textContent = ranked.length
-    ? `${ranked.length} FACILITIES // NEAREST FIRST`
-    : "NO FACILITIES // 条件に一致するジムがありません";
+    ? theme === "kawaii" ? `近い順に ${ranked.length} 件みつかりました` : `${ranked.length} FACILITIES // NEAREST FIRST`
+    : theme === "kawaii" ? "条件に合うジムが見つかりませんでした" : "NO FACILITIES // 条件に一致するジムがありません";
   list.innerHTML = ranked.map((gym, index) => gymCard(gym, index)).join("");
   list.querySelectorAll<HTMLButtonElement>(".card-select").forEach((card) => {
     card.addEventListener("click", () => selectGym(card.dataset.id!, true));
@@ -350,7 +396,7 @@ function gymCard(gym: RankedGym, index: number): string {
         <span class="address">${escapeHtml(gym.address)}</span>
         <span class="fees">${fees}</span>
       </span>
-      <span class="distance"><b>${formatDistance(gym.distanceMeters)}</b><small>STRAIGHT</small></span>
+      <span class="distance"><b>${formatDistance(gym.distanceMeters)}</b><small>${theme === "kawaii" ? "直線距離" : "STRAIGHT"}</small></span>
     </button>
     <div class="card-links">
       <a class="source-link" href="${escapeHtml(gym.facilitySource.url)}" target="_blank" rel="noreferrer">公式情報を開く ↗</a>
@@ -409,11 +455,11 @@ function pinImage(route: Gym["contractRoute"], color: string): ImageData {
   context.closePath();
   context.fillStyle = color;
   context.shadowColor = color;
-  context.shadowBlur = 17;
+  context.shadowBlur = theme === "simple" ? 0 : theme === "kawaii" ? 6 : 17;
   context.fill();
   context.shadowBlur = 0;
-  context.strokeStyle = "#041016";
-  context.lineWidth = 3;
+  context.strokeStyle = theme === "kawaii" ? "#fff8fc" : theme === "simple" ? "#111" : "#041016";
+  context.lineWidth = theme === "kawaii" ? 4 : 3;
   context.stroke();
   return context.getImageData(0, 0, 64, 64);
 }
@@ -425,13 +471,13 @@ function guideImage(brand: string, color: string): ImageData {
   context.font = "700 16px ui-monospace, monospace";
   canvas.width = Math.max(144, Math.ceil(context.measureText(brand).width + 28));
   canvas.height = 144;
-  context.font = "700 16px ui-monospace, monospace";
-  context.fillStyle = "rgb(3 11 17 / .92)";
+  context.font = theme === "kawaii" ? "700 16px ui-rounded, sans-serif" : "700 16px ui-monospace, monospace";
+  context.fillStyle = theme === "kawaii" ? "rgb(255 250 252 / .96)" : "rgb(3 11 17 / .92)";
   context.fillRect(1, 1, canvas.width - 2, 30);
   context.strokeStyle = color;
   context.lineWidth = 2;
   context.shadowColor = color;
-  context.shadowBlur = 12;
+  context.shadowBlur = theme === "simple" ? 0 : theme === "kawaii" ? 5 : 12;
   context.strokeRect(1, 1, canvas.width - 2, 30);
   context.fillStyle = color;
   context.textAlign = "center";
@@ -448,16 +494,26 @@ function guideImage(brand: string, color: string): ImageData {
   return context.getImageData(0, 0, canvas.width, canvas.height);
 }
 
-function createGymLayer(): void {
-  offsets = markerOffsets(gyms);
+function updateGymImages(): void {
+  const normalColor = theme === "kawaii" ? "#df8bb3" : theme === "simple" ? "#a8a8a8" : "#39f6ff";
+  const selectedColor = theme === "kawaii" ? "#f04f98" : theme === "simple" ? "#f4f4f4" : "#ff3daa";
+  const setImage = (id: string, image: ImageData): void => {
+    if (map.hasImage(id)) map.updateImage(id, image);
+    else map.addImage(id, image, { pixelRatio: 2 });
+  };
   for (const route of ["healthpia", "konami-direct", "konami-affiliate", "central-series"] as const) {
-    map.addImage(`gym-${route}`, pinImage(route, "#39f6ff"), { pixelRatio: 2 });
-    map.addImage(`gym-${route}-selected`, pinImage(route, "#ff3daa"), { pixelRatio: 2 });
+    setImage(`gym-${route}`, pinImage(route, normalColor));
+    setImage(`gym-${route}-selected`, pinImage(route, selectedColor));
   }
   for (const brand of new Set(gyms.map((gym) => gym.brand))) {
-    map.addImage(`gym-guide-normal-${brand}`, guideImage(brand, "#39f6ff"), { pixelRatio: 2 });
-    map.addImage(`gym-guide-selected-${brand}`, guideImage(brand, "#ff3daa"), { pixelRatio: 2 });
+    setImage(`gym-guide-normal-${brand}`, guideImage(brand, normalColor));
+    setImage(`gym-guide-selected-${brand}`, guideImage(brand, selectedColor));
   }
+}
+
+function createGymLayer(): void {
+  offsets = markerOffsets(gyms);
+  updateGymImages();
   map.addSource(GYM_SOURCE, { type: "geojson", data: gymFeatureCollection([], offsets) });
   map.addLayer({
     id: GYM_GUIDE_LAYER,
@@ -488,12 +544,16 @@ function createGymLayer(): void {
       "icon-rotation-alignment": "viewport",
     },
   });
-  map.on("click", GYM_LAYER, ({ features }) => {
-    const id = features?.[0]?.properties.id;
-    if (typeof id === "string") selectGym(id);
-  });
-  map.on("mouseenter", GYM_LAYER, () => { map.getCanvas().style.cursor = "pointer"; });
-  map.on("mouseleave", GYM_LAYER, () => { map.getCanvas().style.cursor = ""; });
+  updateGymSource();
+  if (!gymLayerEventsBound) {
+    gymLayerEventsBound = true;
+    map.on("click", GYM_LAYER, ({ features }) => {
+      const id = features?.[0]?.properties.id;
+      if (typeof id === "string") selectGym(id);
+    });
+    map.on("mouseenter", GYM_LAYER, () => { map.getCanvas().style.cursor = "pointer"; });
+    map.on("mouseleave", GYM_LAYER, () => { map.getCanvas().style.cursor = ""; });
+  }
 }
 
 function updateGymSource(): void {
@@ -570,15 +630,15 @@ async function start(): Promise<void> {
     for (const brand of [...new Set(gyms.map(({ brand }) => brand))].sort((a, b) => a.localeCompare(b, "ja"))) {
       brandSelect.add(new Option(brand, brand));
     }
-    if (!map.isStyleLoaded()) await new Promise<void>((resolve) => map.once("load", () => resolve()));
-    createGymLayer();
+    if (!map.isStyleLoaded()) await new Promise<void>((resolve) => map.once("style.load", () => resolve()));
+    if (!map.getSource(GYM_SOURCE)) createGymLayer();
     bindControls();
     state.currentLocation = await locationPromise;
     setReference(state.currentLocation ?? TOKYO_STATION, state.currentLocation ? "current" : "tokyo", true);
   } catch (error) {
     signal.textContent = "ERROR";
     signal.classList.add("is-error");
-    resultSummary.textContent = "CATALOG ERROR // データを読み込めませんでした";
+    resultSummary.textContent = theme === "kawaii" ? "ジム情報を読み込めませんでした" : "CATALOG ERROR // データを読み込めませんでした";
     console.error(error);
   }
 }

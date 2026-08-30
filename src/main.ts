@@ -43,6 +43,7 @@ app.innerHTML = `
       <div><dt>VISIBLE</dt><dd id="visible-count">---</dd></div>
       <div><dt>ORIGIN</dt><dd id="origin-label">LOCATING</dd></div>
       <div class="telemetry-data"><dt>DATA CHECK</dt><dd id="checked-at">----</dd></div>
+      <div class="telemetry-clock"><dt>SYSTEM CLOCK / JST</dt><dd><time id="system-clock">----.--.-- // --:--:--</time></dd></div>
       <div class="telemetry-view"><dt>VIEW VECTOR</dt><dd id="view-vector">Z11.0 / B000° / P00°</dd></div>
     </dl>
     <span id="stale-status" class="stale-status" hidden>! DATA STALE</span>
@@ -101,7 +102,50 @@ app.innerHTML = `
   <button class="reticle" type="button" aria-label="地図を北向きに戻す" title="地図を北向きに戻す">
     <i class="radar-sweep" aria-hidden="true"></i><span class="compass-needle" aria-hidden="true"><b>N</b></span>
   </button>
-  <footer class="site-footer">(C) <a href="https://github.com/kota-sakahara" target="_blank" rel="noreferrer">Kota Sakahara</a> 2026</footer>
+  <footer class="site-footer">(C) <a href="https://github.com/kota-sakahara" target="_blank" rel="noreferrer">Kota Sakahara</a> 2026 <span>//</span> <button id="briefing-open" type="button">BRIEFING</button></footer>
+  <dialog id="initial-briefing" class="briefing-dialog" aria-labelledby="briefing-title" aria-describedby="briefing-intro">
+    <div class="briefing-frame">
+      <header class="briefing-header">
+        <span>SECURE CHANNEL // FIRST ACCESS</span>
+        <b>PROTOCOL 01</b>
+      </header>
+      <div class="briefing-content">
+        <p class="briefing-kicker">INITIAL BRIEFING</p>
+        <h2 id="briefing-title">ITS GYM GRID <span>// SYSTEM ACCESS</span></h2>
+        <p id="briefing-intro" class="briefing-intro">このサイトは、関東ITソフトウェア健康保険組合（ITS）の補助対象ジムを探すための、非公式ナビゲーションシステムです。ITSおよび各施設運営者が提供する公式サービスではありません。</p>
+
+        <aside class="training-message">
+          <small>TRAINING MESSAGE</small>
+          <strong>最高のメニューを考えるより、今日一回ジムへ行く方が強い。</strong>
+          <p>近い、安い、なんとなく気になる。理由は何でもOK。<br />今日の目的地を決めて、身体を動かしに行こう。</p>
+        </aside>
+
+        <div class="briefing-grid">
+          <section>
+            <small>DATA ACCURACY // 掲載情報</small>
+            <p>掲載施設・料金・住所は、画面に表示された最終確認日時点の公開情報です。情報の完全性・正確性・最新性は保証されません。</p>
+          </section>
+          <section>
+            <small>ACCESS CONDITIONS // 利用条件</small>
+            <p>利用資格、年齢制限、事前登録、必要書類、手数料などは施設や契約経路によって異なります。本サイトは利用資格を判定しません。利用前に必ず「公式情報を開く」から最新情報をご確認ください。</p>
+          </section>
+          <section>
+            <small>POSITION DATA // 位置情報</small>
+            <p>表示距離は基準地点からの直線距離であり、実際の経路や所要時間ではありません。現在地はブラウザ内での検索と距離計算に利用し、本サイトには保存しません。地図表示や外部リンクの利用時には、外部サービスとの通信が発生します。</p>
+          </section>
+        </div>
+
+        <div class="briefing-final">
+          <small>FINAL CHECK</small>
+          <p>本サイトの情報だけを根拠に利用を決定せず、最終的な料金・利用可否・営業状況を公式サイトまたは施設へご確認ください。</p>
+        </div>
+      </div>
+      <footer class="briefing-action">
+        <small>このブリーフィングは初回のみ表示されます。フッターからいつでも再確認できます。</small>
+        <button id="briefing-accept" type="button"><span>BRIEFING ACKNOWLEDGED</span>内容を確認してシステムを起動</button>
+      </footer>
+    </div>
+  </dialog>
 `;
 
 const required = <T extends Element>(selector: string): T => {
@@ -113,6 +157,7 @@ const required = <T extends Element>(selector: string): T => {
 const visibleCount = required<HTMLElement>("#visible-count");
 const originLabel = required<HTMLElement>("#origin-label");
 const checkedAtElement = required<HTMLElement>("#checked-at");
+const systemClock = required<HTMLTimeElement>("#system-clock");
 const viewVector = required<HTMLElement>("#view-vector");
 const staleStatus = required<HTMLElement>("#stale-status");
 const signal = required<HTMLElement>(".signal");
@@ -133,6 +178,9 @@ const centerPinButton = required<HTMLButtonElement>("#center-pin");
 const resetPinButton = required<HTMLButtonElement>("#reset-pin");
 const compassButton = required<HTMLButtonElement>(".reticle");
 const compassNeedle = required<HTMLElement>(".compass-needle");
+const briefingDialog = required<HTMLDialogElement>("#initial-briefing");
+const briefingAcceptButton = required<HTMLButtonElement>("#briefing-accept");
+const briefingOpenButton = required<HTMLButtonElement>("#briefing-open");
 
 if (matchMedia("(max-width: 760px)").matches) mapLegend.open = false;
 
@@ -195,6 +243,27 @@ const formatDistance = (meters: number): string => meters < 1000
   ? `${Math.max(1, Math.round(meters / 10) * 10)} m`
   : `${(meters / 1000).toFixed(meters < 10_000 ? 1 : 0)} km`;
 const gymLngLat = (gym: Gym): LngLat => new LngLat(gym.location.longitude, gym.location.latitude);
+
+const tokyoClock = new Intl.DateTimeFormat("en-CA", {
+  timeZone: "Asia/Tokyo",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+  hour: "2-digit",
+  minute: "2-digit",
+  second: "2-digit",
+  hourCycle: "h23",
+});
+
+function updateSystemClock(): void {
+  const now = new Date();
+  const parts = Object.fromEntries(tokyoClock.formatToParts(now).map(({ type, value }) => [type, value]));
+  systemClock.dateTime = now.toISOString();
+  systemClock.textContent = `${parts.year}.${parts.month}.${parts.day} // ${parts.hour}:${parts.minute}:${parts.second} JST`;
+}
+
+updateSystemClock();
+window.setInterval(updateSystemClock, 1000);
 
 function referenceLabel(kind: ReferenceKind): string {
   return kind === "current" ? "CURRENT LOCATION" : kind === "pin" ? "CUSTOM PIN" : "TOKYO STATION";
@@ -514,4 +583,23 @@ async function start(): Promise<void> {
   }
 }
 
-void start();
+const BRIEFING_KEY = "its-gym-grid:briefing:v1";
+let systemStarted = false;
+const startSystem = (): void => {
+  if (systemStarted) return;
+  systemStarted = true;
+  void start();
+};
+
+briefingDialog.addEventListener("cancel", (event) => event.preventDefault());
+briefingOpenButton.addEventListener("click", () => briefingDialog.showModal());
+briefingAcceptButton.addEventListener("click", () => {
+  try { localStorage.setItem(BRIEFING_KEY, "acknowledged"); } catch { /* Storage may be unavailable. */ }
+  briefingDialog.close();
+  startSystem();
+});
+
+let briefingAcknowledged = false;
+try { briefingAcknowledged = localStorage.getItem(BRIEFING_KEY) === "acknowledged"; } catch { /* Show briefing. */ }
+if (briefingAcknowledged) startSystem();
+else briefingDialog.showModal();

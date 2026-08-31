@@ -19,6 +19,11 @@ const MAP_STYLE_LIGHT = "https://tiles.openfreemap.org/styles/positron";
 const GYM_SOURCE = "gym-locations";
 const GYM_LAYER = "gym-pins";
 const GYM_GUIDE_LAYER = "gym-guides";
+const TERRAIN_SOURCE = "terrain-dem";
+const TERRAIN_HILLSHADE_LAYER = "terrain-hillshade";
+const TERRAIN_URL = "https://tiles.mapterhorn.com/tilejson.json";
+const TERRAIN_EXAGGERATION = 4;
+const TERRAIN_PITCH = 65;
 const TOKYO_STATION = new LngLat(139.767125, 35.681236);
 const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const THEME_KEY = "its-gym-grid:theme";
@@ -217,7 +222,10 @@ themeSelect.addEventListener("change", () => {
     mapStyle = nextMapStyle;
     mapStyleReady = false;
     map.setStyle(mapStyle);
-  } else if (gyms.length && mapStyleReady) updateGymImages();
+  } else {
+    if (gyms.length && mapStyleReady) updateGymImages();
+    if (is3d) syncTerrain(true);
+  }
   if (gyms.length) render();
   try { localStorage.setItem(THEME_KEY, theme); } catch { /* Storage may be unavailable. */ }
 });
@@ -237,10 +245,12 @@ const map = new maplibregl.Map({
   style: mapStyle,
   center: TOKYO_STATION,
   zoom: 11,
+  maxPitch: 75,
   attributionControl: { compact: true },
 });
 map.on("style.load", () => {
   mapStyleReady = true;
+  syncTerrain(is3d);
   if (gyms.length && !map.getSource(GYM_SOURCE)) createGymLayer();
 });
 map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "bottom-right");
@@ -256,10 +266,49 @@ const update3dButton = (active: boolean): void => {
     ? active ? "平面で見る" : "立体で見る"
     : active ? "□ 2D VIEW" : "◇ 3D VIEW";
 };
+function syncTerrain(active: boolean): void {
+  if (!mapStyleReady) return;
+  if (!active) {
+    map.setTerrain(null);
+    if (map.getLayer(TERRAIN_HILLSHADE_LAYER)) {
+      map.setLayoutProperty(TERRAIN_HILLSHADE_LAYER, "visibility", "none");
+    }
+    return;
+  }
+  if (!map.getSource(TERRAIN_SOURCE)) {
+    map.addSource(TERRAIN_SOURCE, { type: "raster-dem", url: TERRAIN_URL });
+  }
+  const colors = theme === "kawaii"
+    ? { shadow: "#d3c7ce", highlight: "#ffffff", accent: "#b9adb5" }
+    : theme === "simple"
+      ? { shadow: "#050708", highlight: "#606a6d", accent: "#30383a" }
+      : { shadow: "#020b10", highlight: "#92abb0", accent: "#31535b" };
+  if (!map.getLayer(TERRAIN_HILLSHADE_LAYER)) {
+    const firstLabel = map.getStyle().layers.find(({ type }) => type === "symbol")?.id;
+    map.addLayer({
+      id: TERRAIN_HILLSHADE_LAYER,
+      type: "hillshade",
+      source: TERRAIN_SOURCE,
+      paint: {
+        "hillshade-exaggeration": 0.85,
+        "hillshade-shadow-color": colors.shadow,
+        "hillshade-highlight-color": colors.highlight,
+        "hillshade-accent-color": colors.accent,
+      },
+    }, firstLabel);
+  } else {
+    map.setLayoutProperty(TERRAIN_HILLSHADE_LAYER, "visibility", "visible");
+    map.setPaintProperty(TERRAIN_HILLSHADE_LAYER, "hillshade-shadow-color", colors.shadow);
+    map.setPaintProperty(TERRAIN_HILLSHADE_LAYER, "hillshade-highlight-color", colors.highlight);
+    map.setPaintProperty(TERRAIN_HILLSHADE_LAYER, "hillshade-accent-color", colors.accent);
+  }
+  map.setTerrain({ source: TERRAIN_SOURCE, exaggeration: TERRAIN_EXAGGERATION });
+}
 map.on("pitch", () => {
   const active = map.getPitch() > 30;
   if (active === is3d) return;
   is3d = active;
+  syncTerrain(active);
   update3dButton(active);
   view3dButton.setAttribute("aria-pressed", String(active));
   if (map.getLayer(GYM_GUIDE_LAYER)) {
@@ -269,7 +318,7 @@ map.on("pitch", () => {
 view3dButton.addEventListener("click", () => {
   const active = map.getPitch() > 30;
   map.easeTo({
-    pitch: active ? 0 : 55,
+    pitch: active ? 0 : TERRAIN_PITCH,
     bearing: active ? 0 : -20,
     duration: reduceMotion ? 0 : 900,
   });
